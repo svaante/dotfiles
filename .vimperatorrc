@@ -1,0 +1,251 @@
+" mashiro .vimperatorrc
+" firefox-9.0.1 + vimperator-3.3
+
+" Initialize {{{1
+"nmapc
+"vmapc
+"cmapc
+"imapc
+
+
+" Options {{{1
+set runtimepath=~/.vimperator
+set titlestring="Mozilla Firefox"
+set messages=100
+set verbose=1
+set defsearch=google
+set toolbars=noaddons,nobookmarks,nomenu,nonavigation,tabs
+set complete=slS
+set history=1000
+set newtab=all
+set popups=tab
+set nohlsearch
+set ignorecase
+set incsearch
+set smartcase
+set focuscontent
+set visualbell
+colorscheme darkness3
+
+let mapleader = ","
+
+highlight Bell display: none;
+
+" about:config
+set! general.autoScroll=false
+set! ui.key.generalAccessKey=0
+set! browser.tabs.closeButtons=2
+set! browser.tabs.closeWindowWithLastTab=false
+set! browser.tabs.loadDivertedInBackground=true
+set! browser.urlbar.filter.javascript=false
+set! browser.urlbar.maxRichResults=20
+set! browser.sessionstore.max_tabs_undo=20
+set! browser.sessionstore.max_concurrent_tabs=0
+set! browser.startup.homepage=http://www.google.com
+set! dom.popup_maximum=200
+set! mousewheel.withnokey.numlines=6
+set! mousewheel.withnokey.sysnumlines=false
+
+
+" QMarks {{{1
+silent qmark g https://github.com/
+silent qmark G http://gist.github.com/
+silent qmark m https://mail.google.com/mail/
+silent qmark w http://www.wolframalpha.com/
+
+" Commands {{{1
+command! -nargs=* feedkeys js events.feedkeys("<args>")
+command! -nargs=0 copybufferurl js util.copyToClipboard(buffer.URL)
+
+" tabs
+command! -complete=history -nargs=+ -description="Open history in the current tab" hopen open <args>
+command! -complete=history -nargs=+ -description="Open history in a new tab" htabopen tabopen <args>
+
+
+let g:auto_append_anchor = "true"
+
+
+" ime_controller.js {{{2
+let g:ex_ime_mode = "inactive"
+let g:textarea_ime_mode = "inactive"
+
+
+" ldrize_cooperation.js {{{2
+noremap <Leader>, :toggleldrc<CR>
+let g:ldrc_enable = "true"
+let g:ldrc_captureMappings = "['j','k','p','o']"
+let g:ldrc_intelligence_bind = "true"
+let g:ldrc_hints = "true"
+let g:ldrc_skip = "0.1"
+
+
+" localkeymode.js {{{2
+let g:localkeymode_enable = "true"
+js <<EOM
+liberator.globalVariables.localKeyMappings = [
+[/www\.(nicovideo\.jp|youtube\.com)\/watch/, [
+['p s S v V m r c f F'],
+['p', ':stplay'],
+['s', ':stseek! +10'],
+['S', ':stseek! -10 '],
+['v', ':stvolume! +10 '],
+['V', ':stvolume! -10 '],
+['m', ':stmute'],
+['r', ':strepeat'],
+['c', ':stcomment'],
+['f', ':stlarge'],
+['F', ':stfullscreen']
+]],
+];
+EOM
+
+
+" maine_coon.js {{{2
+let g:maine_coon_style = "height: 1em; margin: 0; padding: 3px; border: none; text-align: left; color: #7090d0; font: 11px/1 sans-serif; background: #0c0c0c;"
+
+
+" no_reading.js {{{2
+let g:no_reading_do_echo = 1
+
+
+
+" sbmcommentsviewer.js {{{2
+let g:def_sbm_format = "timestamp,id,tags,comment"
+let g:def_sbms = "h"
+noremap <Leader>bc :viewSBMComments<CR>
+
+
+" statusline-toolbar.js {{{2
+"lazy set statuslinetoolbars=feed-button,lpt_lastpass-compact-btn,greasemonkey-tbb
+
+" Toggle Autopagerize {{{2
+javascript <<EOM
+let (evaluateXPath = util.evaluateXPath || buffer.evaluateXPath) {
+commands.addUserCommand(
+['autopagerize'],
+'Toggle AutoPagerize',
+function (args) {
+buffer.followLink(
+evaluateXPath('id("autopagerize_help")/div/a[@class="autopagerize_link"]').snapshotItem(0)
+);
+},
+{},
+true
+);
+}
+EOM
+
+
+
+
+" Styles {{{1
+style -name liberator-statusline-fix chrome://* <<EOM
+#liberator-statusline {
+  -moz-box-align: center !important;
+  -moz-box-pack: center !important;
+  margin-right: 0.5em !important;
+}
+EOM
+
+style -name liberator-customize-toolbar-fix chrome://* <<EOM
+  #liberator-customize-toolbar {
+    -moz-box-align: center !important;
+    -moz-box-pack: center !important;
+    -moz-appearance: none !important;
+    min-width: none !important;
+    min-height: none !important;
+  }
+
+  #liberator-customize-toolbar > *:-moz-any(image, toolbarbutton) {
+    max-height: none !important;
+  }
+
+  #liberator-customize-toolbar toolbarbutton,
+  #liberator-customize-toolbar statusbarpanel {
+    -moz-box-align: center !important;
+    -moz-box-pack: center !important;
+    -moz-appearance: none !important;
+    margin: 0 1px !important;
+    padding: 0 !important;
+  }
+
+  #liberator-customize-toolbar #restore-button,
+  #liberator-customize-toolbar .toolbarbutton-1:not([type="menu-button"]),
+  #liberator-customize-toolbar .toolbarbutton-1 > .toolbarbutton-menubutton-button,
+  #liberator-customize-toolbar .toolbarbutton-menubutton-dropmarker {
+    background: none !important;
+    border: none !important;
+    min-width: none !important;
+    max-width: none !important;
+    max-height: none !important;
+    min-height: none !important;
+    border-radius: none !important;
+    -moz-box-shadow: none !important;
+  }
+EOM
+
+
+" AutoCmds {{{1
+" Minibuffer オブジェクト取れなくなってしまったのでとりあえず無効に
+"lazy minibuffer LDRize::disable-smooth-scroll
+
+
+" Mappings {{{1
+
+" depth
+nnoremap <BS> gu
+nnoremap <C-BS> gU
+
+" scroll
+nnoremap j 3j
+nnoremap k 3k
+nnoremap J <C-d>
+nnoremap K <C-u>
+nnoremap <A-j> 3j
+nnoremap <A-k> 3k
+nnoremap <A-h> 3h
+nnoremap <A-l> 3l
+
+" tab
+nnoremap <silent> <C-l> :tabmove! +1<CR>
+nnoremap <silent> <C-h> :tabmove! -1<CR>
+
+nnoremap y Y
+nnoremap Y y
+nnoremap zi zI
+nnoremap zI zi
+nnoremap zm zM
+nnoremap zM zm
+nnoremap zo zO
+nnoremap zO zo
+nnoremap zr zR
+nnoremap zR zr
+nnoremap zz zZ
+nnoremap zZ zz
+
+noremap <silent> <C-r> :restart<CR>
+noremap <silent> <Leader>h :htabopen<Space>
+noremap <silent> <Leader>s :source ~/.vimperatorrc<CR>:echo<Space>"source completed."<CR>
+noremap <silent> <Leader>a :autopagerize<CR>
+noremap U :undo<Space>
+
+noremap <silent> eu :set encoding=UTF-8<CR>
+noremap <silent> es :set encoding=Shift_JIS<CR>
+noremap <silent> ee :set encoding=EUC-JP<CR>
+noremap <silent> ei :set encoding=ISO-2022-JP<CR>
+
+cnoremap <C-j> <Nop>
+cnoremap <C-b> <Left>
+cnoremap <C-f> <Right>
+cnoremap <C-n> <Tab>
+cnoremap <C-p> <S-Tab>
+inoremap <C-f> <Right>
+inoremap <C-b> <Left>
+inoremap <C-p> <Up>
+inoremap <C-n> <Down>
+
+
+" End {{{1
+source! ~/.vimperatorrc.local
+
+" vim: ts=2 sw=2 sts=2 fdm=marker ft=vimperator

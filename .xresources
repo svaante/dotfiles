@@ -1,0 +1,57 @@
+!-------~---~----------~----------~----
+!  \  /
+!   \/  Name: Daniel Pettersson
+!   /\  email: svaante@gmail.com
+! ./  \ defaults
+!
+! file: ~/.Xdefault
+!
+!-------~---~----------~----------~----
+
+
+!-------~---~----------~----------~----
+! GENERAL
+!-------~---~----------~----------~----
+
+URxvt*termName: rxvt-256color
+URxvt*font: -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso8859-1
+URxvt*boldFont: -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso8859-1
+*scrollBar: false
+
+
+!-------~---~----------~----------~----
+! URL
+!-------~---~----------~----------~----
+
+.matcher.button: 1
+.urlLauncher: /usr/bin/firefox
+.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
+*matcher.pattern.2: \\bhttps?:\/\/[\\w-.]*\/[\\w./?&@#-]*.(?i)(jpg|jpeg|png)
+*matcher.launcher.2: urlfeh 
+
+
+!-------~---~----------~----------~----
+! CLIPBOARD
+!-------~---~----------~----------~----
+URxvt.perl-ext-common: default,matcher,clipboard,url-select,keyboard-select
+URxvt.keysym.M-v: perl:clipboard:paste
+
+
+!-------~---~----------~----------~----
+! COLOR
+!-------~---~----------~----------~----
+*customization: -color
+*boldMode: false
+*internalBorder: 5
+
+!  #include "/home/svaante/colors/pastbin" 
+!  #include "/home/svaante/colors/light1" 
+   #include "/home/svaante/colors/redandblue" 
+! #include "/home/svaante/colors/brew" 
+!#include "/home/svaante/colors/strange" 
+!#include "/home/svaante/colors/xoria256" 
+!#include "/home/svaante/colors/4bit" 
+
+
+
+

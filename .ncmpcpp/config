@@ -1,0 +1,49 @@
+####################################################
+## this is example configuration file, copy it to ##
+## ~/.ncmpcpp/config and set up your preferences  ##
+####################################################
+#
+##### connection settings #####
+#
+## set it in order to make tag editor and renaming files work properly
+#
+#mpd_host = "localhost"
+#
+#mpd_port = "6600"
+#
+mpd_music_dir = "~/music"
+
+mpd_connection_timeout = "5"
+
+mpd_connection_timeout = "5"
+playlist_disable_highlight_delay = "3"
+message_delay_time = "4"
+song_list_format = "{ %a $4[$9%b$4]$9 - }{%t}|{$5%f$9}$R{%l }"
+song_status_format = " { {%a{ \"%b\"{ (%y)}} - }{%t}}|{%f}"
+song_window_title_format = "{%a - }{%t}|{%f}"
+song_columns_list_format = "(5f)[red]{l} (32)[white]{a} (30)[white]{b} (33)[white]{t}"
+playlist_display_mode = "columns" (classic/columns)
+browser_display_mode = "classic" (classic/columns)
+progressbar_look = "── "
+user_interface = "classic" (classic/alternative)
+media_library_left_column = "a" (possible values: a,y,g,c,p, legend above)
+header_visibility = "no"
+statusbar_visibility = "yes"
+header_text_scrolling = "yes"
+fancy_scrolling = "yes"
+display_remaining_time = "yes"
+ignore_leading_the = "yes"
+empty_tag_marker = ""
+enable_window_title = "yes"
+colors_enabled = "yes"
+header_window_color = "magenta"
+volume_color = "green"
+state_line_color = "white"
+state_flags_color = "blue"
+main_window_color = "white"
+color1 = "cyan"
+color2 = "blue"
+main_window_highlight_color = "red"
+progressbar_color = "white"
+statusbar_color = "white" 
+active_column_color = "red"
