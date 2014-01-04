@@ -31,9 +31,6 @@
 "      History: See supplied documentation.
 "==============================================================================
 
-" Svaante edit makes vim cd to file when entering buffer
-autocmd BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')
-
 " Exit quickly if already running or when 'compatible' is set. {{{1
 if exists("g:bufexplorer_version") || &cp
   finish
@@ -449,7 +446,7 @@ function! s:BEMapKeys()
 
   nnoremap <buffer> <silent> m             :call <SID>BEMRUListShow()<cr>
   nnoremap <buffer> <silent> p             :call <SID>BEToggleSplitOutPathName()<cr>
-  nnoremap <buffer> <silent> <F2>          :call <SID>BEClose("quit")<cr>
+  nnoremap <buffer> <silent> q             :call <SID>BEClose("quit")<cr>
   nnoremap <buffer> <silent> r             :call <SID>BESortReverse()<cr>
   nnoremap <buffer> <silent> R             :call <SID>BEToggleShowRelativePath()<cr>
   nnoremap <buffer> <silent> s             :call <SID>BESortSelect()<cr>
@@ -577,6 +574,7 @@ function! s:BECreateHelp()
 
   if (!exists("b:displayMode") || b:displayMode != "winmanager") || (b:displayMode == "winmanager" && g:bufExplorerDetailedHelp == 1)
     call add(header, s:BEGetHelpStatus())
+    call add(header, '"=')
   endif
 
   let s:firstBufferLine = len(header) + 1

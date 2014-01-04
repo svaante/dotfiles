@@ -7,14 +7,25 @@
 " Basics
     set nocompatible
     set background=light
+    filetype off
 " end Basics
 "-------~---~----------~----------~----
 
 "-------~---~----------~----------~----
 " Setup bundel
-    runtime! autoload/pathogen.vim
-    silent! call pathogen#infect()
-    silent! call pathogen#helptags()
+    set rtp+=~/.vim/bundle/vundle/
+    call vundle#rc()
+    Bundle 'kien/ctrlp.vim'
+
+    Bundle 'Valloric/YouCompleteMe'
+    Bundle 'SirVer/ultisnips'
+    Bundle 'scrooloose/syntastic'
+
+    Bundle 'sjl/gundo.vim'
+    Bundle 'tpope/vim-fugitive'
+
+    Bundle 'benmills/vimux'
+    Bundle 'christoomey/vim-tmux-navigator'
 " end Setup bundle
 "-------~---~----------~----------~----
 
@@ -35,6 +46,7 @@
     set backspace=indent,eol,start                              " Make backspace more flexible
     set fileformats=unix,dos,mac                                " Support fileformats in this order
     set incsearch                                               " Set incremental search
+    set hlsearch                                                " Higlight search
     set shortmess=aOstT                                         " Shortens message to lose press to con
 " end General
 "-------~---~----------~----------~----
@@ -105,7 +117,7 @@
     set tags+=./tags                                            " Look for tags
     set tags+=~/.vim/tags/std                                   " Set tags for std
     set tags+=~/.vim/tags/gl                                    " Set tags for ql
-    set tags+=~/.vim/tags/qt4                                   " Set tags for qt4       
+    set tags+=~/.vim/tags/qt4                                   " Set tags for qt4
     set tags+=~/.vim/tags/sfml                                  " Set tags for sfml
     set tags+=~/.vim/tags/sdl                                   " Set tags for sdl
 " end Tags
@@ -113,22 +125,11 @@
 
 "-------~---~----------~----------~----
 " Plugins
-    " bufExplorer
-        let g:bufExplorerShowRelativePath=0                     " Show relative path
-        let g:bufExplorerDetailedHelp=0                         " Show detailed help
-        let g:bufExplorerDefaultHelp=0                          " Dont show default help
-        let g:bufExplorerSortBy='mru'                           " Sort by full file pathname
-    " end bufExplorer
     " eclim
         let g:EclimBrowser='firefox'"
         let g:EclimCompletionMethod = 'omnifunc'
         let g:EclimJavaValidate=1
     " eclim end
-    " NERDTree
-        let NERDTreeShowHidden=1                                " Dont show hidden files in nerdtree
-        let NERDTreeQuitOnOpen=1                                " Makes NerdTree close on opening file
-        let NERDTreeMinimalUI=1                                 " Makes NERDtrees ui minimal
-    " end NERDTree
     " UtilSnips
         let g:UltiSnipsExpandTrigger="<c-j>"
         let g:UltiSnipsJumpForwardTrigger="<c-j>"
@@ -145,14 +146,12 @@
         let g:ycm_global_ycm_extra_conf='/home/svaante/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
         let g:ycm_autoclose_preview_window_after_completion=1
     " Ycm end
-    " vim-latex
-        let g:tex_flavor='latex'
-    " vim-latex end
 " end Plugins
 "-------~---~----------~----------~----
 
 "-------~---~----------~----------~----
 " Mappings
+
     " Smash <Esc> remap
     inoremap jk <Esc>
     cnoremap jk <Esc>
@@ -161,10 +160,6 @@
 
     " Write with sudo
     cmap w!! w !sudo tee % >/dev/null
-
-    " Wrapped lines goes down/up to next row
-    nnoremap j gj
-    nnoremap k gk
 
     " Insert blank lines without leaving normal mode
     nmap T O<ESC>
@@ -176,21 +171,18 @@
     " Closing windows easier
     nnoremap <C-c> :q<CR>
 
-    " Toggel nerdtree
-    nmap <F1> :NERDTreeToggle <CR>
-
-    " Open bufexplorer
-        map <F2> <Leader>bej
+    " Ctrlp 
+        nmap <C-p> :CtrlPMixed<CR>
 
     " Open Gundo
         nmap <F3> :GundoToggle <CR>
 
     " Complie program
-        autocmd FileType c,cpp map <buffer> <F5> :call VimuxRunCommand("make -C" . expand("%:p:h"))<CR>
-        autocmd FileType java map <buffer> <F5> :call VimuxRunCommand("classpath2cli " . expand("%:p") .  " cr")<CR>
+        autocmd FileType c,cpp map <buffer> <C-m> :call VimuxRunCommand("make -C" . expand("%:p:h"))<CR>
+        autocmd FileType java map <buffer> <C-m> :call VimuxRunCommand("classpath2cli " . expand("%:p") .  " cr")<CR>
 
     " Bind <F9> to open .vimrc
-        nmap <F9> :e $MYVIMRC <CR>
+        nmap <F1> :e $MYVIMRC <CR>
 
     " Run ctags in the current folder for c++
         map <F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
@@ -207,8 +199,8 @@
 
     " Move change windows with hjkl keys
         map <C-h> :wincmd h<CR>
-    "    map <C-j> :wincmd j<CR>
-    "    map <C-k> :wincmd k<CR>
+        map <C-j> :wincmd j<CR>
+        map <C-k> :wincmd k<CR>
         map <C-l> :wincmd l<CR>
 
     " end Mappings
