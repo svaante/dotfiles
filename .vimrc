@@ -16,6 +16,8 @@
     set rtp+=~/.vim/bundle/vundle/
     call vundle#rc()
     Bundle 'kien/ctrlp.vim'
+    Bundle 'scrooloose/nerdtree'
+    Bundle 'corntrace/bufexplorer'
 
     Bundle 'Valloric/YouCompleteMe'
     Bundle 'SirVer/ultisnips'
@@ -125,6 +127,17 @@
 
 "-------~---~----------~----------~----
 " Plugins
+    " bufExplorer
+        let g:bufExplorerShowRelativePath=0                     " Show relative path
+        let g:bufExplorerDetailedHelp=0                         " Show detailed help
+        let g:bufExplorerDefaultHelp=0                          " Dont show default help
+        let g:bufExplorerSortBy='mru'                           " Sort by full file pathname
+    " end bufExplorer
+    " NERDTree
+        let NERDTreeShowHidden=1                                " Dont show hidden files in nerdtree
+        let NERDTreeQuitOnOpen=1                                " Makes NerdTree close on opening file
+        let NERDTreeMinimalUI=1                                 " Makes NERDtrees ui minimal
+    " end NERDTree
     " eclim
         let g:EclimBrowser='firefox'"
         let g:EclimCompletionMethod = 'omnifunc'
@@ -153,36 +166,42 @@
 " Mappings
 
     " Smash <Esc> remap
-    inoremap jk <Esc>
-    cnoremap jk <Esc>
-    inoremap kj <Esc>
-    cnoremap kj <Esc>
+        inoremap jk <Esc>
+        cnoremap jk <Esc>
+        inoremap kj <Esc>
+        cnoremap kj <Esc>
 
     " Write with sudo
-    cmap w!! w !sudo tee % >/dev/null
+        cmap w!! w !sudo tee % >/dev/null
 
     " Insert blank lines without leaving normal mode
-    nmap T O<ESC>
-    nmap t o<ESC>
+        nmap T O<ESC>
+        nmap t o<ESC>
 
     " Making it easier to execute macro
-    nnoremap Q @q
+        nnoremap Q @q
 
     " Closing windows easier
-    nnoremap <C-c> :q<CR>
+        nnoremap <C-c> :q<CR>
 
     " Ctrlp 
         nmap <C-p> :CtrlPMixed<CR>
+
+    " Toggel nerdtree
+        nmap <F1> :NERDTreeToggle <CR>
+
+    " Open bufexplorer
+        map <F2> <Leader>bej
 
     " Open Gundo
         nmap <F3> :GundoToggle <CR>
 
     " Complie program
-        autocmd FileType c,cpp map <buffer> <C-m> :call VimuxRunCommand("make -C" . expand("%:p:h"))<CR>
-        autocmd FileType java map <buffer> <C-m> :call VimuxRunCommand("classpath2cli " . expand("%:p") .  " cr")<CR>
+        autocmd FileType c,cpp map <buffer> <F5> :call VimuxRunCommand("make -C" . expand("%:p:h"))<CR>
+        autocmd FileType java map <buffer> <F5> :call VimuxRunCommand("classpath2cli " . expand("%:p") .  " cr")<CR>
 
     " Bind <F9> to open .vimrc
-        nmap <F1> :e $MYVIMRC <CR>
+        nmap <F9> :e $MYVIMRC <CR>
 
     " Run ctags in the current folder for c++
         map <F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
