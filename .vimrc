@@ -310,13 +310,13 @@
     " NERDTree
 
         " Dont show hidden files in nerdtree
-        let NERDTreeShowHidden=1
+        "let NERDTreeShowHidden=1
 
         " Makes NerdTree close on opening file
         let NERDTreeQuitOnOpen=1
 
         " Makes NERDtrees ui minimal
-        let NERDTreeMinimalUI=1
+        "let NERDTreeMinimalUI=1
 
         " Don't display these kinds of files
         let NERDTreeIgnore=[ '\.ncb$', '\.suo$', '\.vcproj\.RIMNET', '\.obj$',
