@@ -25,7 +25,7 @@ set incsearch
 set smartcase
 set focuscontent
 set visualbell
-colorscheme darkness3
+colorscheme sol
 
 let mapleader = ","
 

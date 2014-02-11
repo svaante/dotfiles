@@ -22,6 +22,8 @@
     Bundle 'Valloric/YouCompleteMe'
     Bundle 'SirVer/ultisnips'
     Bundle 'scrooloose/syntastic'
+    Bundle 'majutsushi/tagbar'
+    Bundle 'Raimondi/delimitMate'
 
     Bundle 'sjl/gundo.vim'
     Bundle 'tpope/vim-fugitive'
@@ -81,6 +83,9 @@
 
     " Set incremental search
     set incsearch
+
+    " Case insensitive
+    set ignorecase
 
     " Higlight search
     set hlsearch
@@ -158,6 +163,7 @@
 " Graphics
 
     " Set butiful collor scheme
+    "colorscheme navajo-night
     colorscheme navajo-night
 
     " Enable wildmenu
@@ -282,11 +288,18 @@
     " Set tags for sdl
     set tags+=~/.vim/tags/sdl
 
+    " Set tags for libspotify
+    set tags+=~/.vim/tags/libspotify
+
 " end Tags
 "-------~---~----------~----------~----
 
 "-------~---~----------~----------~----
 " Plugins
+
+    " delimate
+        let delimitMate_expand_cr = 1
+    " end delimate
 
     " bufExplorer
 
@@ -338,6 +351,7 @@
     " UtilSnips
         let g:UltiSnipsExpandTrigger="<c-j>"
         let g:UltiSnipsJumpForwardTrigger="<c-j>"
+        let g:UltiSnipsJumpBackwardTrigger="<c-k>"
     " UtilSnips end
 
     " Vimux
@@ -348,7 +362,7 @@
 
     " Syntastic
 
-        let g:syntastic_always_populate_loc_list = 1
+        let g:syntastic_check_on_open = 1
 
         " Bind s and S to write and write all to remove those pesky signs
         nmap s :SignClearAll<CR>:w<CR>
@@ -361,18 +375,66 @@
         let g:ycm_global_ycm_extra_conf=
                     \ '/home/svaante/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
 
-        let g:ycm_autoclose_preview_window_after_completion=1
+        let g:ycm_autoclose_preview_window_after_completion = 1
+
+        let g:ycm_min_num_of_chars_for_completion = 1
+
+        let g:ycm_seed_identifiers_with_syntax = 1
+
+        let g:ycm_register_as_syntastic_checker = 1
+
+        let g:ycm_add_preview_to_completeopt = 1
 
         " Goto def
-        nmap <C-d> :YcmCompleter GoToDefinition<CR>
+        nmap <C-d> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
     " Ycm end
+
+    " Tagbar
+
+        let g:tagbar_compact = 1
+
+        let g:tagbar_left = 1
+
+        let g:tagbar_width = 30
+
+        let g:tagbar_autoclose = 1
+
+        let g:tagbar_indent = 2
+
+        let g:tagbar_autofocus = 1
+
+        let g:tagbar_sort = 0
+
+        let g:tagbar_foldlevel = 1
+
+        let g:tagbar_type_c = {
+            \ 'kinds' : [
+                \ 'd:macros:1:0',
+                \ 't:typedefs:0:0',
+                \ 'u:unions',
+                \ 'g:enums',
+                \ 's:structs',
+                \ 'v:variables:0:0',
+                \ 'p:prototypes:1:0',
+                \ 'e:enumerators:0:0',
+                \ 'm:members:0:0',
+                \ 'f:functions',
+            \ ],
+        \ }
+
+        nmap <F4> :TagbarToggle<CR>
+
+    " Tagbar end
 
     " Ctrlp
 
         nmap <C-p> :CtrlPMixed<CR>
+
         let g:ctrlp_working_path_mode = 'rc'
+
         let g:ctrlp_custom_ignore = '\v%(/\.%(git|hg|svn)|\.%(class|o|png|jpg|jpeg|bmp|tar|jar|tgz|deb|zip)$|/target/)'
+
     " Ctrlp end
 
     " Gundo
@@ -427,6 +489,16 @@
         map <C-j> :wincmd j<CR>
         map <C-k> :wincmd k<CR>
         map <C-l> :wincmd l<CR>
+        imap <C-h> jk:wincmd h<CR>
+        imap <C-j> jk:wincmd j<CR>
+        imap <C-k> jk:wincmd k<CR>
+        imap <C-l> jk:wincmd l<CR>
 
-    " end Mappings
+" end Mappings
+"-------~---~----------~----------~----
+
+"-------~---~----------~----------~----
+" Functions
+
+" end Functions
 "-------~---~----------~----------~----

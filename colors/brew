@@ -1,0 +1,35 @@
+!bg/fg
+*foreground: #d0d0d0
+*background: #1c1c1c
+
+!black
+*color0: #1c1c1c
+*color8: #505050
+
+!red
+*color1: #cd5c5c
+*color9: #e5505f
+
+!green
+*color2: #8eae71
+*color10: #95c749
+
+!yellow
+*color3: #d2b48c
+*color11: #ffa75d
+
+!blue
+*color4: #0087af
+*color12: #6495ed
+
+!magenta
+*color5: #7E62B3
+*color13: #a488d9
+
+!cyan
+*color6: #5f7b8a
+*color14: #00afd7
+
+!white
+*color7: #665c64
+*color15: #cacaca
