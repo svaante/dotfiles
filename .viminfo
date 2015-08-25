@@ -1,0 +1,3649 @@
+# Den här viminfo-filen genererades av Vim 7.4.
+# Du får redigera den om du är försiktig!
+
+# Värde av 'encoding' när den här filen blev skriven
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# Senaste Sökmönster:
+~MSle0~/ctrlp
+
+# Senaste Substitute Sökmönster:
+~MSle0&\s\+$
+
+# Senaste ersättningssträng:
+$
+
+# Kommandorad Historia (nyaste till äldsta):
+:q
+:w
+:e .config/fish/config.fish
+:set paste
+:q!
+:w !sudo tee % >/dev/null
+:e lol.py
+:e Codewars/Compare\ powers/code.hs
+:e 
+:wq
+:noremap J }
+:e lol
+:W
+:e schema.sql
+:%s/\s\+$//
+:retab
+:e ~/blur.js
+:e spoti.py
+:close
+:e static/login.html
+:e <F1>
+::
+:e json_response
+:qw
+:e test.py
+:q1
+:w!
+:e code.py
+:e TODO
+:w WOWWWWW
+:wall
+:wa
+:e card_designs.txt
+:e .gitignore
+:;
+:w/get
+:e controller.py
+:e view.py
+:e main.py
+:e main
+:e game.py
+:e card.py
+:e shandalar/card.py
+:e shandalar/view.py
+:e shandalar/controller.py
+:e shandalar/game.py
+:e
+:e PlayerController.py
+:e Controller.py
+:e BotController.py
+:e controlle
+:e Game/Game.py
+:e Game
+:e Cards/Card.py
+:e Controllers/PlayerController.py
+:e Controllers/Controller.py
+:e Controllers/BotController.py
+:e cardcontainer.py
+:e observer.py
+:s
+:GundoToggle
+:r
+:ws
+:SyntasticSetLoclist
+:SyntasticInfo
+:SyntasticToggleMode
+:wq!
+:e combat.py
+:e phases.py
+:e manapool.py
+:e player.py
+:e Stack.py
+:e ../shandalar2/game.py
+:e sender
+:e stack.py
+:e test.java
+:%s/width/g_width
+:38
+:e Makefile
+:193
+:919
+:e ../.i3/config
+:78
+:45
+
+# Söksträng Historia (nyaste till äldsta):
+?/ctrlp
+?/syntas
+?/ycm
+?/is-alb
+?/execute
+?/where
+?/playe
+?/get-al
+?/album im
+?/blur
+?/clo
+?/header a
+?/logout
+?/login
+?/add-al
+?/ a
+?/a
+?/album
+?/form
+?/h3
+?/submit
+?/header
+?/album b
+?/sidebar
+?/bor
+?/button
+?/spot
+?/sideba
+?/h1
+?/side
+?/album wi
+?/text
+?/select
+?/get
+?/get_al
+?/load
+?/shadow
+?/if
+?/add-a
+?/registe
+?/add
+?/add-users
+?/href
+?/uri
+?/query
+?/quert
+?/db_quer
+?/box
+?/get_ar
+?/search_art
+?/play
+?/is-pla
+?/delete fr
+?/album_
+?/album_id
+?/id
+?/erro
+?/session
+?/be
+? ,
+?/pla
+?/add-alb
+?/played
+?/tracks
+?/butto
+?/utton
+? \s\+$
+?/redire
+?/refres
+?/module
+?/throw
+?/err
+?/utils
+?/merge
+?/haskell
+?/destro
+?/day_of
+?/default
+?/swords_
+?/Forest
+?/Lion
+?/Spirittoken
+?/tusk
+?/ b
+?/abili
+?/destroy
+?/Creature
+?/class playe
+?/creaturecar
+?/enters
+?/creature
+?/actions.deal_da
+?/deal_
+?/DealDa
+?/cast
+?/castabe
+?/instant
+?/dealDa
+?/Enchant
+?/Day
+?/exile
+?/gamezone
+?/condem
+?/attacking
+?/Instant
+?/exi
+?/exile_card
+?/gain_life
+?/det
+?/all
+?/remove_all
+?/remove
+?/add_all
+?/Gamezone
+?/emptu
+?/triggerhand
+?/cards
+?/move
+?/DAN
+?/Danei
+?/destroy_cards
+?/Land
+?/card_name
+?/deten
+?/leve
+?/le
+?/enchan
+?/is_card
+?/able_to_bloc
+?/able_t
+?/life
+?/wall of re
+?/may
+?/gainli
+?/Action
+?/subtypes
+?/Mystica
+?/rema
+?/counterspell
+?/remand
+?/rem
+?/",)
+?/insta
+?/class ai
+?/ai
+?/choose_atta
+?/trigger_ha
+?/trigger_a
+?/choose_attac
+?/destor
+?/target ==
+?/wants
+?/destr
+?/cease
+?/futu
+?/sorcery
+?/SorceryCard
+?/class gamez
+?/activate
+?/casta
+?/enchant
+?/fromzonetoz
+?/AiHelper
+?/Graveyard
+?/FromGrave
+?/fromGraveyardto
+?/graveyard
+?/skelet
+?/soldier
+?/choose_tar
+?/show_targets
+?/show_ta
+?/untapped
+?/searchLib
+?/clear
+?/leaves
+?/class game
+?/lamota_vi
+?/lamo
+?/ch
+?/choose_target = True
+?/print
+?/playercontr
+?/show_targ
+?/taget
+?/DrawAcard
+?/dani
+?/daniel
+?/activateand
+?/action
+?/return
+?/DrawCar
+?/def add_
+?/add_to
+?/equ
+?/wow
+?/register
+? \<Activate\>
+?/card.Card
+?/card
+?/class ac
+?/clas actio
+?/choose_target
+?/choose_
+?/game.
+?/game.Ma
+?/game
+?/()
+?/Damage
+?/abilit
+?/waiting_f
+?/show_target
+?/[0]
+?/choose_targ
+?/choos_target
+?/choose_targe
+?/class GameZone
+?/choose
+?/choosetar
+?/valid
+?/activateandadd
+?//activateandadd
+?/enough
+?/activa
+?/activate_ab
+?/class pla
+?/class activa
+?/add_to_game
+?/activations
+?/addmana
+?/activates
+?/class manap
+?/manapool
+?/self.ma
+?/mana
+?/manasource
+?/182
+?/controller
+?/activate_waiting_for
+?/owner.controller
+?/owner.conter
+?/actions
+?/class
+?/ac
+?/subtype
+?/targets.add
+?/targets_add
+?/is_subtype
+?/Targets
+?/player
+?/pl
+?/swamp
+?/plains
+?/library
+? \<add\>
+?/is_type
+?/)
+?/card_type
+?/aihel
+?/aihelper
+?/card_rt
+?/card_typ
+?/basi
+?/basic
+?/board
+?/blocking =
+?/blocking
+?/blocking = None
+?/blocki
+?/class actio
+?/trigger
+?/resolve
+?/resolv
+?/target
+?/needs_targ
+?/grave
+?/pass_pri
+?/drawaca
+?/class abil
+?/class Abili
+?/abilityfrom
+?/attack
+?/wors
+?/loose
+?/k_
+?/choice_vi
+?/class contr
+?/choice
+?/choose_choice
+?/add_to_stack
+?/phases
+?/Dark
+?/draw
+?/draw_card
+?/class actions
+?/end ste
+?/beg
+?/get_t
+?/Basic
+?/pass_prio
+?/put
+?/class action
+?/targets
+?/lambd
+?/converted
+?/cardsurface
+?/toughness
+?/power
+?/bot
+?/get_card_power
+?/get_card_pw
+?/get_card_pwer
+?/dealdam
+?/DestroyNonLandPermanentWith
+?/Destro
+?/revea
+?/reav
+?/tapp
+?/Effect
+?/EffectDea
+?/from
+?/effect
+?/lan
+?/card.acti
+?/cardsview
+?/gamezonevi
+?/moss
+?/island
+?/Soldi
+?/sldier
+?/gamezon
+?/gamezoen
+?/isl
+?/print(
+?/valid_tar
+?/polite
+?/fromgrave
+?/polite_re
+?/enters the
+?/gamezonebutt
+?/gameview
+?/cardsView
+?/set targets
+?/combat
+?/gravey
+?/class card
+?/card-targe
+?/gamezoneview
+?/class cardsview
+?/empty
+?/choose_targets
+?/owner.cho
+?/owner.choose
+?/add_to_sta
+?/class cont
+?/class Pla
+?/class player
+?/ggc
+?/class act
+?/actionsnnn
+?/click
+?/butt
+?/hit
+?/game_zone
+?/prio
+?/playercon
+?/Player
+?/cardsurfacesha
+?/attackers
+?/EffectDeal
+?/car
+?/manapoo
+?/ManaPool
+?/gcc
+?/effectdeal
+?/cardsur
+?/self. 
+?/self.surface
+?/surfaces
+?/pop
+?/handview
+?/cardsurf
+?/surfacehandler
+?/update
+?/auto_cast
+?/auto_cas
+?/auto_
+?/self.card
+?/self.cards
+?/contr
+?/botcontr
+?/gamevi
+?/gameView
+?/HandV
+?/add_view
+?/gamezonevie
+?/stack
+?/View(
+?/View
+?/hand
+?/class Contr
+?/class Player
+?/class play
+?/class Card
+?/class PlayerContr
+?/)))kkkkkkkkk
+?/BotCon
+?/human_vi
+?/player_view
+?/board_view
+?/class PlayerVie
+?/playerview
+?/buttons
+?/CardConta
+?/card_conta
+?/c
+?/class player(
+?/self.stack
+?/Human
+?/Bot
+?/game, owner
+?/sil
+?/silit
+?/cobra
+?/class Card(
+?/class creat
+?/class cards
+?/class game(
+?/class cards(
+?/class cardsurface
+?/class Cards
+?/cardview
+?/card_at_coordin
+?/class cardsurfaces(
+?/class cardsuf
+?/cardsurfaces
+?/cardsurfaces(
+?/lol
+?/choose_blockers
+?/combat da
+?/combat pla
+?/combat to
+?/combat to pl
+?/class card(
+?/combat damage
+?/sadsadsadsadsadsa
+?/deal
+?/self.blocker
+?/get_oppon
+?/hej
+?/botCo
+?/surface
+?/able_to_block
+?/blocker
+?/botContr
+?/get_turn
+?/pygame.
+?/pass_
+?/playercont
+?/botco
+?/pygame.event
+?/space
+?/playerContr
+?/opponej
+?/declare
+?/botcontro
+?/add_card
+?/botContro
+?/gresso
+?/botcont
+?/able_to
+?/opponent
+?/BotContr
+?/class Ca
+?/get_edge
+?/get_source
+?/class E
+?/clas Ed
+?/vetex
+?/botCont
+?/castable
+?/payers
+?/botcon
+?/manapool.add
+?/class mna
+?/class manapool
+?/class ma
+?/card_id
+?/sorted
+?/class mana
+?/fores
+?/forest
+?/card.activate
+?/activated
+?/class card()
+?/class land
+?/Class card(
+?/manasour
+?/max
+?/creatu
+?/static
+?/deal_damage
+?/get_da
+?/sys
+?/"end
+?/end
+?/transfo
+?/untap
+? \<0\>
+?/class cardsurfa
+?/boardView
+?/boardview
+?/gmain
+?/pit
+?/game.action
+?/font
+?/font.rende
+?/effectde
+?/summo
+?/summonin
+?/class effec
+?/summ
+?/choose_attack
+?/con
+?/controll
+?/add_ver
+?/beggi
+?/choose_a
+?/class a
+?/playerCo
+?/summon
+?/clas actions
+?/botc
+?/prio(
+?/class Player(
+?/playerCont
+?/lands
+?/lands_pa
+?/next_turn
+?/actions.n
+?/players
+?/manapool.clea
+?/"begin
+?/enought
+?/activate_able
+?/class acti
+?/class cardsur
+?/card_surface
+?/get_count
+?/game.stack
+? \<jpe\>
+?/For
+?/Fron
+?/class Mana
+?/Manap
+?/mana_co
+?/BoardView
+?/class board
+?/class CardSurface
+?/CardSurface
+?/class CardView
+?/class Board
+?/stackview
+?/front
+?/vis
+?/visiable
+?/visi
+?/card_at
+?/addto
+?/Cards
+?/class Game
+?/Game
+?/len(librar
+?/fe
+?/view
+?/keywo
+?/keywod
+?/PlayerInfo
+?/draww
+?/draw(screen
+?/coordina
+?/sta
+?/card_hei
+?/card_wi
+?/card_wid
+?/Cardhi
+?/set_size
+?/card1
+?/spri
+?/Card
+?/read_acpi
+?/batt
+?/pyli
+?/lint
+?/flake
+?/synta
+?/Time
+?/usr/bin/env python      1
+?/asasasa
+? \<else\>
+?/You
+?/20
+?/asdasd
+? "#");
+?/width
+?/init
+?/g_stat
+?/prin
+?/chec
+?/open
+? width
+?/'j'
+?/j
+?/rende
+?/render
+?/get_VA
+?/ren
+?/status
+?/x
+?/get_ti
+?/name_fi
+?/clicked)
+?/clicked == 1
+?///
+?/+ 1
+?/get_i3_workspace
+?/workspaces_lis
+?/ws_head
+?/ws_
+?/TODO
+?/docka
+?/dockare
+?/doock
+?/rect.height
+?/rect./
+?/"plank
+?/dock
+?/works
+?/ws2
+?/spo
+?/"term
+? #}
+?/bar
+?/break
+? @$
+?/list
+?/ws_inde
+?/workspa
+?/term
+?/term"
+?/mod+e
+?/mod+t
+?/w
+?/q
+?/them
+?/defa
+?/set
+?/multi
+?/I3
+?/dOCK
+?/COCK
+?/DEFAj
+?/hei
+?/- 50
+?/shows
+?/batte
+?/Con
+?/100
+?/W_DOCK
+?/W_DOCK_BOTT
+?/plan
+?/dme
+?/aaaaa
+?/t
+?/work
+?/conf
+?/divstyle
+?/none
+?/GROOVE
+?/opaci
+?/plug
+?/tmux
+?/vim
+?/gui
+?/back
+? \<if\>
+?/inside
+?/byte
+?/creat
+? (*game_map).tiles[y][x]
+? random
+?/rand
+? .map
+?/map
+?/genera
+?/generate_map
+? pos
+? creture
+?/YCM
+?/syntast
+?/func
+?/fuc
+?/"term
+?/mappi
+?/lea
+? #}
+?/util
+?/ctrlpbuff
+?/bar
+?/leader
+?/break
+?/mapp
+?/bind
+? @$
+?/web
+?/list
+?/set gui
+?/setjjj
+?/ws_inde
+?/filetype
+?/dmen
+?/workspa
+?/tab
+?/term
+?/term"
+?/mod+e
+?/mod+t
+?/w
+?/q
+?/them
+?/defa
+?/set
+?/multi
+?/I3
+?/dOCK
+?/COCK
+?/DEFAj
+?/hei
+?/- 50
+?/shows
+?/batte
+?/Con
+?/100
+?/W_DOCK
+?/W_DOCK_BOTT
+?/plan
+?/dme
+?/aaaaa
+?/t
+?/work
+?/conf
+?/divstyle
+?/none
+?/GROOVE
+?/opaci
+?/plug
+?/tmux
+?/vim
+?/gui
+?/back
+? \<if\>
+?/inside
+?/byte
+?/creat
+? (*game_map).tiles[y][x]
+? random
+?/rand
+? .map
+?/map
+?/genera
+?/generate_map
+? pos
+? creture
+?/YCM
+?/syntast
+?/func
+?/fuc
+?/mappi
+?/lea
+?/util
+?/ctrlpbuff
+?/leader
+?/mapp
+?/bind
+?/web
+?/set gui
+?/setjjj
+?/filetype
+?/dmen
+?/tab
+
+# Uttryck Historia (nyaste till äldsta):
+
+# Inmatningsrad Historia (nyaste till äldsta):
+
+# Inmatningsrad Historia (nyaste till äldsta):
+
+# Register:
+"0	LINE	0
+	    "
+""1	LINE	0
+	set fish_key_bindings fish_vi_key_bindings
+"2	LINE	0
+	function s:MkNonExDir(file, buf)
+	    if empty(getbufvar(a:buf, '&buftype')) && a:file!~#'\v^\w+\:\/'
+	                let dir=fnamemodify(a:file, ':h')
+	                        if !isdirectory(dir)
+	                                        call mkdir(dir, 'p')
+	                                                endif
+	                                                    endif
+	                                                    endfunction
+	                                                    augroup BWCCreateDir
+	                                                        autocmd!
+	                                                            autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand(''))
+"3	LINE	0
+	    "
+"4	LINE	0
+	    "
+"5	LINE	0
+	    "
+"6	LINE	0
+	
+"7	LINE	0
+	
+"8	LINE	0
+	
+"9	LINE	0
+	
+"j	CHAR	0
+	kjjjkkj]}}}}jkkkk:Q
+"q@	CHAR	0
+	jk0f.PQi#jkQj
+"-	CHAR	0
+	ctrlp.v
+
+# Filmärken:
+'J  4  20  ~/Workspace/Codewars/Opposites Attract/code.hs
+'0  1  43  ~/.config/fish/config.fish
+'1  1  0  .config/fish/functions/fish_user_key_bindings.fish
+'2  1  0  ~/.vimrc
+'3  333  65  ~/.vimrc
+'4  8  0  ~/Workspace/lol.py
+'5  318  4  ~/.vimrc
+'6  1  3  ~/Workspace/lol.py
+'7  2  0  ~/lol
+'8  204  12  ~/Workspace/Album Queue/test.py
+'9  9  8  ~/Workspace/spotify_web_app_test/wow/test.py
+
+# Hopplista (nyaste först):
+-'  1  43  ~/.config/fish/config.fish
+-'  1  2  .config/fish/functions/fish_user_key_bindings.fish
+-'  6  60  .config/fish/functions/fish_user_key_bindings.fish
+-'  424  4  ~/.vimrc
+-'  18  17  ~/.vimrc
+-'  414  0  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  1  0  ~/Workspace/lol.py
+-'  1  0  ~/Workspace/Codewars/Compare powers/code.hs
+-'  333  65  ~/.vimrc
+-'  20  0  ~/.vimrc
+-'  13  0  ~/.vimrc
+-'  5  0  ~/.vimrc
+-'  25  0  ~/.vimrc
+-'  28  0  ~/.vimrc
+-'  34  0  ~/.vimrc
+-'  39  0  ~/.vimrc
+-'  42  0  ~/.vimrc
+-'  45  0  ~/.vimrc
+-'  48  0  ~/.vimrc
+-'  49  0  ~/.vimrc
+-'  105  0  ~/.vimrc
+-'  108  0  ~/.vimrc
+-'  111  0  ~/.vimrc
+-'  114  0  ~/.vimrc
+-'  117  0  ~/.vimrc
+-'  118  4  ~/.vimrc
+-'  109  0  ~/.vimrc
+-'  106  0  ~/.vimrc
+-'  102  0  ~/.vimrc
+-'  99  0  ~/.vimrc
+-'  96  0  ~/.vimrc
+-'  112  0  ~/.vimrc
+-'  115  0  ~/.vimrc
+-'  120  0  ~/.vimrc
+-'  123  0  ~/.vimrc
+-'  93  0  ~/.vimrc
+-'  90  0  ~/.vimrc
+-'  87  0  ~/.vimrc
+-'  84  0  ~/.vimrc
+-'  81  0  ~/.vimrc
+-'  78  0  ~/.vimrc
+-'  75  0  ~/.vimrc
+-'  72  0  ~/.vimrc
+-'  69  0  ~/.vimrc
+-'  66  0  ~/.vimrc
+-'  63  0  ~/.vimrc
+-'  60  0  ~/.vimrc
+-'  57  0  ~/.vimrc
+-'  54  0  ~/.vimrc
+-'  51  0  ~/.vimrc
+-'  8  0  ~/Workspace/lol.py
+-'  382  18  ~/.vimrc
+-'  282  4  ~/.vimrc
+-'  5  0  ~/Workspace/lol.py
+-'  4  7  ~/Workspace/lol.py
+-'  3  18  ~/Workspace/lol.py
+-'  6  5  ~/Workspace/lol.py
+-'  9  0  ~/Workspace/lol.py
+-'  318  4  ~/.vimrc
+-'  310  6  ~/.vimrc
+-'  23  23  ~/.vimrc
+-'  2  7  ~/Workspace/lol.py
+-'  12  0  ~/.vimrc
+-'  2  0  ~/lol
+-'  339  4  ~/.vimrc
+-'  204  12  ~/Workspace/Album Queue/test.py
+-'  203  44  ~/Workspace/Album Queue/test.py
+-'  205  55  ~/Workspace/Album Queue/test.py
+-'  77  0  ~/Workspace/Album Queue/test.py
+-'  1  0  ~/Workspace/Album Queue/test.py
+-'  9  8  ~/Workspace/spotify_web_app_test/wow/test.py
+-'  1  0  ~/Workspace/spotify_web_app_test/wow/test.py
+-'  253  19  ~/Workspace/shand2/main.py
+-'  1  0  ~/Workspace/shand2/main.py
+-'  127  0  ~/Workspace/mine/mine.c
+-'  1  0  ~/Workspace/lol.py
+-'  1  0  ~/Workspace/Codewars/Compare powers/code.hs
+-'  424  4  ~/.vimrc
+-'  18  17  ~/.vimrc
+-'  414  0  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  1  0  ~/Workspace/lol.py
+-'  1  0  ~/Workspace/Codewars/Compare powers/code.hs
+-'  333  65  ~/.vimrc
+-'  20  0  ~/.vimrc
+-'  13  0  ~/.vimrc
+-'  5  0  ~/.vimrc
+-'  25  0  ~/.vimrc
+-'  28  0  ~/.vimrc
+-'  34  0  ~/.vimrc
+-'  39  0  ~/.vimrc
+-'  42  0  ~/.vimrc
+-'  45  0  ~/.vimrc
+-'  48  0  ~/.vimrc
+-'  49  0  ~/.vimrc
+-'  1  43  ~/.config/fish/config.fish
+
+# Historia för märken inne i filer (nyaste till äldsta):
+
+> .config/fish/functions/fish_user_key_bindings.fish
+	"	1	2
+	^	5	3
+	.	5	3
+	+	9	0
+	+	1	32
+	+	6	67
+	+	6	49
+	+	6	44
+	+	6	60
+	+	6	138
+	+	6	0
+	+	1	36
+	+	5	3
+
+> ~/.config/fish/config.fish
+	"	1	43
+	^	1	44
+	.	1	0
+	+	1	0
+
+> ~/.vimrc
+	"	424	4
+	^	425	11
+	.	414	0
+	+	402	50
+	+	402	53
+	+	402	45
+	+	402	50
+	+	402	51
+	+	19	12
+	+	413	0
+	+	413	32
+	+	413	38
+	+	413	39
+	+	413	55
+	+	413	93
+	+	413	110
+	+	413	132
+	+	413	223
+	+	413	160
+	+	413	154
+	+	413	0
+	+	426	32
+	+	426	61
+	+	402	0
+	+	402	0
+	+	402	0
+	+	318	34
+	+	314	7
+	+	314	36
+	+	314	51
+	+	314	25
+	+	314	51
+	+	315	40
+	+	316	40
+	+	317	67
+	+	318	51
+	+	318	25
+	+	318	51
+	+	318	40
+	+	318	40
+	+	318	67
+	+	318	51
+	+	318	25
+	+	318	51
+	+	318	40
+	+	318	40
+	+	318	0
+	+	314	0
+	+	314	0
+	+	311	0
+	+	317	37
+	+	327	8
+	+	330	0
+	+	327	40
+	+	326	7
+	+	327	40
+	+	326	0
+	+	328	8
+	+	328	52
+	+	328	56
+	+	328	0
+	+	322	63
+	+	309	0
+	+	308	44
+	+	308	49
+	+	308	50
+	+	426	0
+	+	28	0
+	+	29	0
+	+	29	0
+	+	339	11
+	+	343	14
+	+	340	0
+	+	343	4
+	+	343	0
+	+	339	0
+	+	338	0
+	+	340	0
+	+	318	46
+	+	339	0
+	+	329	44
+	+	318	7
+	+	315	39
+	+	314	50
+	+	318	0
+	+	402	0
+	+	308	0
+	+	402	0
+	+	380	21
+	+	379	0
+	+	381	18
+	+	382	18
+	+	106	0
+	+	107	0
+	+	109	0
+	+	112	0
+	+	115	0
+	+	105	0
+	+	333	65
+	+	414	0
+	+	414	32
+	+	425	10
+	+	414	0
+
+> ~/Workspace/ControlP
+	"	2	0
+	.	2	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	2	0
+
+> ~/Workspace/Codewars/Compare powers/code.hs
+	"	1	0
+	^	8	33
+	.	8	0
+	+	1	0
+	+	3	0
+	+	7	31
+	+	8	39
+	+	9	20
+	+	10	37
+	+	9	37
+	+	8	40
+	+	9	40
+	+	10	40
+	+	8	0
+
+> ~/Workspace/lol.py
+	"	1	0
+	.	3	0
+	+	1	0
+	+	3	0
+	+	1	12
+	+	3	0
+	+	3	18
+	+	3	32
+	+	3	3
+	+	3	18
+	+	3	15
+	+	9	12
+	+	10	0
+	+	9	2
+	+	10	0
+	+	10	0
+	+	9	12
+	+	10	0
+	+	9	12
+	+	5	0
+	+	3	12
+	+	5	4
+	+	6	16
+	+	7	11
+	+	5	0
+	+	3	15
+	+	6	17
+	+	3	18
+	+	3	0
+
+> ~/ControlP
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/lol
+	"	2	0
+	.	2	0
+	+	2	0
+
+> ~/Workspace/Album Queue/test.py
+	"	204	12
+	.	203	0
+	+	203	68
+	+	203	70
+	+	203	52
+	+	203	0
+	+	203	45
+	+	203	0
+	+	203	27
+	+	203	64
+	+	203	0
+
+> ~/Workspace/spotify_web_app_test/wow/test.py
+	"	9	8
+	^	218	50
+	.	228	0
+	+	117	70
+	+	118	17
+	+	119	7
+	+	118	65
+	+	117	15
+	+	119	27
+	+	120	34
+	+	121	12
+	+	123	0
+	+	123	0
+	+	122	15
+	+	174	0
+	+	3	0
+	+	168	71
+	+	171	14
+	+	169	30
+	+	171	37
+	+	172	65
+	+	182	39
+	+	176	49
+	+	171	28
+	+	172	47
+	+	170	25
+	+	173	19
+	+	170	12
+	+	173	55
+	+	183	29
+	+	176	33
+	+	122	45
+	+	123	0
+	+	113	0
+	+	122	18
+	+	118	38
+	+	117	0
+	+	118	43
+	+	117	51
+	+	122	28
+	+	149	73
+	+	142	61
+	+	143	21
+	+	141	30
+	+	144	0
+	+	143	64
+	+	144	0
+	+	147	0
+	+	141	26
+	+	143	30
+	+	149	57
+	+	144	0
+	+	149	82
+	+	137	48
+	+	62	18
+	+	64	13
+	+	66	0
+	+	65	36
+	+	63	9
+	+	62	20
+	+	188	0
+	+	187	0
+	+	188	33
+	+	189	24
+	+	191	0
+	+	194	80
+	+	195	17
+	+	199	34
+	+	202	0
+	+	201	0
+	+	223	8
+	+	211	0
+	+	209	65
+	+	211	0
+	+	209	13
+	+	194	13
+	+	196	20
+	+	199	34
+	+	211	13
+	+	209	19
+	+	208	18
+	+	212	35
+	+	223	0
+	+	213	0
+	+	214	0
+	+	223	0
+	+	213	77
+	+	214	0
+	+	215	89
+	+	220	42
+	+	222	0
+	+	222	16
+	+	223	30
+	+	220	45
+	+	202	16
+	+	203	7
+	+	220	0
+	+	216	36
+	+	217	36
+	+	219	34
+	+	217	79
+	+	218	48
+	+	228	0
+	u	147	23
+
+> ~/Workspace/shand2/main.py
+	"	253	19
+
+> ~/Workspace/mine/mine.c
+	"	127	0
+
+> ~/Workspace/spotify_web_app_test/wow/ControlP
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Workspace/spotify_web_app_test/wow/schema.sql
+	"	19	23
+	^	20	24
+	.	20	23
+	+	16	8
+	+	11	6
+	+	17	9
+	+	20	0
+	+	18	10
+	+	19	11
+	+	20	0
+	+	20	11
+	+	20	0
+	+	21	39
+	+	20	23
+
+> ~/Workspace/spotify_web_app_test/wow/templates/login.html
+	"	141	0
+	.	192	0
+	+	46	0
+	+	47	0
+	+	13	15
+	+	66	0
+	+	43	0
+	+	13	0
+	+	13	0
+	+	47	0
+	+	45	31
+	+	110	0
+	+	137	43
+	+	109	20
+	+	108	0
+	+	109	0
+	+	41	14
+	+	42	16
+	+	40	14
+	+	40	15
+	+	27	9
+	+	30	13
+	+	40	0
+	+	29	4
+	+	28	16
+	+	42	12
+	+	45	4
+	+	47	14
+	+	47	13
+	+	47	0
+	+	40	21
+	+	40	0
+	+	40	6
+	+	30	0
+	+	40	0
+	+	40	15
+	+	27	9
+	+	131	48
+	+	28	18
+	+	137	8
+	+	137	11
+	+	137	8
+	+	137	27
+	+	137	0
+	+	137	0
+	+	133	0
+	+	137	0
+	+	136	0
+	+	137	4
+	+	137	8
+	+	137	4
+	+	137	0
+	+	133	0
+	+	133	0
+	+	135	110
+	+	135	16
+	+	143	41
+	+	145	14
+	+	176	30
+	+	176	40
+	+	176	28
+	+	176	28
+	+	176	28
+	+	49	0
+	+	55	0
+	+	51	0
+	+	55	0
+	+	52	17
+	+	133	23
+	+	157	0
+	+	157	0
+	+	5	86
+	+	133	0
+	+	157	0
+	+	156	3
+	+	156	19
+	+	156	0
+	+	133	0
+	+	133	0
+	+	133	81
+	+	133	0
+	+	137	0
+	+	35	8
+	+	137	0
+	+	132	0
+	+	37	16
+	+	3	21
+	+	176	0
+	+	3	21
+	+	23	30
+	+	84	12
+	+	84	0
+	+	190	0
+	+	191	0
+	+	192	46
+	+	192	0
+	+	192	0
+	+	192	0
+	+	192	19
+	+	192	20
+	+	192	0
+	+	192	0
+
+> ~/Workspace/spotify_web_app_test/wow/__Gundo_Preview__
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Workspace/spotify_web_app_test/wow/__Gundo__
+	"	6	1
+	.	1	0
+	+	1	0
+
+> ~/Workspace/spotify_web_app_test/pyth/templates/login.html
+	"	87	35
+	^	87	85
+	.	87	84
+	+	56	8
+	+	58	0
+	+	57	4
+	+	113	18
+	+	113	0
+	+	113	0
+	+	113	20
+	+	113	0
+	+	113	0
+	+	113	47
+	+	113	44
+	+	113	48
+	+	113	29
+	+	113	30
+	+	113	30
+	+	113	25
+	+	113	60
+	+	92	27
+	+	113	24
+	+	113	32
+	+	113	0
+	+	106	9
+	+	112	21
+	+	108	6
+	+	112	21
+	+	112	0
+	+	108	58
+	+	59	0
+	+	87	25
+	+	108	55
+	+	112	0
+	+	106	18
+	+	107	4
+	+	108	7
+	+	109	5
+	+	112	0
+	+	110	0
+	+	108	65
+	+	110	61
+	+	112	0
+	+	46	16
+	+	94	0
+	+	90	0
+	+	98	30
+	+	99	0
+	+	101	2
+	+	99	0
+	+	99	30
+	+	68	73
+	+	99	30
+	+	92	0
+	+	38	0
+	+	32	0
+	+	38	0
+	+	38	14
+	+	38	17
+	+	38	0
+	+	41	0
+	+	38	0
+	+	41	0
+	+	33	20
+	+	85	14
+	+	85	0
+	+	33	20
+	+	34	0
+	+	34	0
+	+	38	9
+	+	33	18
+	+	38	0
+	+	33	21
+	+	55	11
+	+	56	10
+	+	55	8
+	+	56	11
+	+	36	15
+	+	37	17
+	+	55	8
+	+	56	10
+	+	55	8
+	+	56	12
+	+	82	11
+	+	82	0
+	+	91	11
+	+	93	17
+	+	92	43
+	+	91	32
+	+	92	33
+	+	85	0
+	+	79	0
+	+	83	4
+	+	82	7
+	+	81	8
+	+	92	29
+	+	88	28
+	+	89	22
+	+	88	21
+	+	72	0
+	+	69	0
+	+	70	0
+	+	87	84
+
+> ~/Workspace/spotify_web_app_test/pyth/ControlP
+	"	2	0
+	.	2	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	45	0
+	+	44	0
+	+	43	0
+	+	42	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	41	0
+	+	40	0
+	+	39	0
+	+	38	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	36	0
+	+	34	0
+	+	32	0
+	+	30	0
+	+	28	0
+	+	26	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	25	0
+	+	23	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	22	0
+	+	21	0
+	+	20	0
+	+	19	0
+	+	18	0
+	+	17	0
+	+	16	0
+	+	15	0
+	+	14	0
+	+	13	0
+	+	12	0
+	+	11	0
+	+	10	0
+	+	9	0
+	+	8	0
+	+	7	0
+	+	6	0
+	+	5	0
+	+	4	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	3	0
+	+	2	0
+
+> ~/Workspace/spotify_web_app_test/pyth/test.py
+	"	24	4
+	^	115	28
+	.	115	45
+	+	107	0
+	+	107	15
+	+	107	33
+	+	107	11
+	+	113	137
+	+	107	12
+	+	107	38
+	+	107	71
+	+	107	0
+	+	107	23
+	+	118	80
+	+	107	39
+	+	118	88
+	+	107	82
+	+	107	0
+	+	118	71
+	+	113	207
+	+	107	0
+	+	107	27
+	+	118	0
+	+	104	0
+	+	118	49
+	+	113	192
+	+	118	70
+	+	1	10
+	+	113	223
+	+	121	65
+	+	6	12
+	+	25	0
+	+	25	67
+	+	25	47
+	+	25	0
+	+	19	0
+	+	18	0
+	+	22	62
+	+	22	133
+	+	22	38
+	+	22	59
+	+	23	0
+	+	22	57
+	+	113	234
+	+	107	0
+	+	113	164
+	+	118	54
+	+	113	164
+	+	103	0
+	+	113	160
+	+	118	39
+	+	119	73
+	+	113	137
+	+	113	250
+	+	121	56
+	+	19	42
+	+	20	45
+	+	121	56
+	+	119	24
+	+	109	60
+	+	119	35
+	+	121	0
+	+	117	0
+	+	113	216
+	+	117	20
+	+	119	54
+	+	121	53
+	+	113	199
+	+	22	85
+	+	25	0
+	+	113	222
+	+	113	113
+	+	113	137
+	+	113	148
+	+	113	26
+	+	112	38
+	+	113	25
+	+	116	0
+	+	113	27
+	+	111	24
+	+	113	110
+	+	121	59
+	+	127	0
+	+	121	61
+	+	109	24
+	+	110	21
+	+	109	24
+	+	110	30
+	+	121	61
+	+	122	58
+	+	117	35
+	+	78	73
+	+	80	39
+	+	78	64
+	+	122	59
+	+	122	58
+	+	117	63
+	+	113	31
+	+	113	141
+	+	113	71
+	+	114	0
+	+	113	27
+	+	115	45
+
+> ~/Workspace/spotify_web_app_test/pyth/__Gundo_Preview__
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Workspace/spotify_web_app_test/pyth/__Gundo__
+	"	170	1
+	.	1	0
+	+	1	0
+
+> ~/Workspace/spotify_web_app_test/pyth/schema.sql
+	"	18	28
+	^	18	29
+	.	18	28
+	+	2	19
+	+	7	1
+	+	1	25
+	+	5	11
+	+	6	13
+	+	20	23
+	+	20	0
+	+	9	0
+	+	2	17
+	+	9	26
+	+	10	18
+	+	11	6
+	+	12	20
+	+	19	0
+	+	19	0
+	+	13	16
+	+	14	10
+	+	15	8
+	+	16	8
+	+	17	18
+	+	18	11
+	+	19	0
+	+	18	28
+
+> ~/Workspace/spotify_web_app_test/pyth/test.db
+	"	1	0
+
+> ~/Workspace/spotify_web_app_test/pyth/last.py
+	"	8	0
+	^	8	62
+	.	8	61
+	+	1	0
+	+	9	0
+	+	9	0
+	+	1	0
+	+	6	0
+	+	1	0
+	+	5	0
+	+	9	8
+	+	3	0
+	+	2	0
+	+	9	56
+	+	9	21
+	+	9	11
+	+	9	51
+	+	9	24
+	+	9	44
+	+	9	0
+	+	9	0
+	+	9	35
+	+	8	0
+	+	9	0
+	+	8	61
+
+> ~/Workspace/spotify_web_app_test/pyth/blur.js
+	"	33	0
+	^	289	11
+	.	33	0
+	+	289	0
+	+	33	0
+
+> ~/Workspace/spotify_web_app_test/pyth/static/login.html
+	"	8	0
+	^	8	35
+	.	8	34
+	+	1	0
+	+	3	15
+	+	4	0
+	+	5	24
+	+	11	0
+	+	11	0
+	+	6	0
+	+	5	30
+	+	5	50
+	+	5	62
+	+	5	43
+	+	5	0
+	+	6	8
+	+	6	8
+	+	11	0
+	+	6	23
+	+	10	15
+	+	6	18
+	+	8	44
+	+	7	0
+	+	8	34
+
+> ~/Workspace/spotify_web_app_test/pyth/spoti.py
+	"	6	39
+	^	6	40
+	.	6	39
+	+	7	44
+	+	2	0
+	+	5	0
+	+	5	99
+	+	6	21
+	+	7	0
+	+	7	52
+	+	6	22
+	+	5	98
+	+	6	13
+	+	5	0
+	+	6	39
+
+> ~/blur.js
+	"	4	0
+	^	73	0
+	.	5	0
+	+	12	0
+	+	72	0
+	+	73	0
+	+	5	0
+
+> ~/Workspace/spotify_web_app_test/web-api-auth-examples/authorization_code/public/index.html
+	"	23	0
+
+> ~/Workspace/spotify_web_app_test/web-api-auth-examples/authorization_code/ControlP
+	"	1	0
+	.	2	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	2	0
+
+> ~/Workspace/spotify_web_app_test/web-api-auth-examples/authorization_code/app.js
+	"	58	12
+	^	16	53
+	.	16	52
+	+	15	48
+	+	16	52
+
+> ~/Workspace/spotify_web_app_test/server.js
+	"	2	0
+	^	9	24
+	.	10	0
+	+	1	23
+	+	1	48
+	+	1	27
+	+	1	47
+	+	1	0
+	+	4	0
+	+	3	9
+	+	9	17
+	+	9	24
+	+	3	26
+	+	4	59
+	+	5	33
+	+	6	18
+	+	8	0
+	+	3	10
+	+	9	23
+	+	10	0
+
+> ~/Workspace/spotify_web_app_test/ControlP
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Workspace/test.js
+	"	1	1
+	^	1	2
+	.	2	0
+	+	2	0
+
+> ~/Workspace/Codewars/Return Negative/code.hs
+	"	4	32
+	^	4	33
+	.	4	32
+	+	5	0
+	+	5	0
+	+	4	41
+	+	1	0
+	+	4	28
+	+	3	22
+	+	4	32
+
+> ~/Workspace/Codewars/Opposites Attract/code.hs
+	"	3	27
+	^	4	33
+	.	4	32
+	+	1	0
+	+	4	32
+
+> ~/Workspace/padhs.hs
+	"	19	0
+	^	1	1
+	.	1	0
+	+	1	35
+	+	1	107
+	+	1	13
+	+	19	60
+	+	18	0
+	+	8	0
+	+	4	0
+	+	1	0
+
+> ~/Workspace/Codewars/Opposites Attract/test.hs
+	"	12	0
+
+> ~/bin/cw
+	"	53	25
+	^	51	25
+	.	52	25
+	+	11	18
+	+	18	49
+	+	12	50
+	+	25	68
+	+	30	68
+	+	41	54
+	+	56	24
+	+	54	38
+	+	55	0
+	+	54	26
+	+	55	20
+	+	56	34
+	+	57	32
+	+	51	24
+	+	52	25
+
+> ~/Workspace/Codewars/Return Negative/ControlP
+	"	2	0
+	.	2	0
+	+	2	0
+
+> ~/Workspace/Codewars/Return Negative/json_response
+	"	3	635
+
+> ~/Workspace/Codewars/Return Negative/code.py
+	"	44	0
+	.	46	0
+	+	45	13
+	+	44	30
+	+	45	30
+	+	46	0
+	+	46	0
+
+> ~/Workspace/Haskell/test.hs
+	"	4	45
+	^	4	46
+	.	4	45
+	+	1	17
+	+	5	0
+	+	2	37
+	+	3	27
+	+	4	45
+
+> ~/Workspace/Codewars/ROT13/code.py
+	"	27	0
+	^	22	0
+	.	22	0
+	+	30	0
+	+	21	20
+	+	19	11
+	+	30	0
+	+	21	52
+	+	21	13
+	+	30	29
+	+	21	28
+	+	17	0
+	+	19	30
+	+	21	21
+	+	30	0
+	+	30	0
+	+	30	0
+	+	30	49
+	+	30	49
+	+	19	54
+	+	30	55
+	+	19	55
+	+	30	0
+	+	30	31
+	+	30	0
+	+	17	19
+	+	19	87
+	+	20	34
+	+	30	19
+	+	30	0
+	+	17	3
+	+	23	2
+	+	23	2
+	+	29	0
+	+	23	22
+	+	23	17
+	+	23	37
+	+	28	0
+	+	23	0
+	+	23	0
+	+	23	0
+	+	23	31
+	+	23	56
+	+	24	270
+	+	25	34
+	+	26	172
+	+	27	35
+	+	23	4
+	+	25	0
+	+	23	39
+	+	24	143
+	+	26	93
+	+	27	26
+	+	23	0
+	+	17	0
+	+	22	0
+
+> ~/Workspace/Codewars/Hamming Distance/code.py
+	"	15	31
+	^	15	32
+	.	15	31
+	+	16	0
+	+	15	31
+
+> ~/Workspace/Codewars/Sum of Digits  Digital Root/code.py
+	"	1	0
+	^	2	76
+	.	1	0
+	+	2	15
+	+	3	26
+	+	3	9
+	+	2	22
+	+	3	7
+	+	2	10
+	+	3	0
+	+	2	46
+	+	3	20
+	+	2	10
+	+	2	17
+	+	2	0
+	+	3	0
+	+	1	0
+
+> ~/Workspace/Codewars/Sum of Digits  Digital Root/ControlP
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Workspace/Codewars/Sum of Digits  Digital Root/test.py
+	"	1	0
+
+> ~/Workspace/Codewars/Title Case/code.py
+	"	54	8
+	^	53	117
+	.	55	0
+	+	50	0
+	+	53	17
+	+	55	37
+	+	50	35
+	+	53	36
+	+	55	0
+	+	51	0
+	+	53	54
+	+	51	66
+	+	53	20
+	+	53	111
+	+	53	97
+	+	50	22
+	+	53	109
+	+	53	21
+	+	53	107
+	+	53	7
+	+	53	20
+	+	53	0
+	+	54	0
+	+	53	43
+	+	52	31
+	+	54	30
+	+	53	95
+	+	55	0
+	+	55	0
+	+	55	5
+	+	55	0
+	+	55	51
+	+	55	53
+	+	55	39
+	+	53	21
+	+	53	116
+	+	55	0
+
+> ~/Workspace/Codewars/Title Case/test.py
+	"	1	0
+
+> ~/Workspace/Codewars/Title Case/ControlP
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Workspace/Codewars/Custom Array Filters/code.py
+	"	57	4
+	^	53	68
+	.	57	54
+	+	53	57
+	+	58	0
+	+	58	30
+	+	54	50
+	+	55	51
+	+	58	47
+	+	58	56
+	+	58	0
+	+	49	0
+	+	48	11
+	+	50	22
+	+	53	3
+	+	54	3
+	+	55	3
+	+	58	3
+	+	58	3
+	+	53	0
+	+	48	14
+	+	50	23
+	+	51	23
+	+	58	0
+	+	58	0
+	+	58	0
+	+	58	0
+	+	58	0
+	+	58	50
+	+	58	29
+	+	58	30
+	+	58	32
+	+	58	31
+	+	58	38
+	+	53	8
+	+	54	8
+	+	55	8
+	+	58	8
+	+	58	8
+	+	53	0
+	+	52	0
+	+	58	11
+	+	53	49
+	+	54	52
+	+	55	52
+	+	58	0
+	+	56	49
+	+	58	0
+	+	57	64
+	+	58	0
+	+	53	71
+	+	54	53
+	+	55	53
+	+	56	52
+	+	57	65
+	+	53	54
+	+	54	53
+	+	55	53
+	+	56	52
+	+	57	65
+	+	53	67
+	+	54	43
+	+	55	48
+	+	56	47
+	+	57	54
+
+> ~/Workspace/Codewars/Power of two/code.py
+	"	39	16
+	^	39	17
+	.	39	16
+	+	39	16
+	+	40	0
+	+	39	16
+
+> ~/Workspace/Codewars/NATO Phonetic Alphabet/code.py
+	"	40	14
+	^	41	39
+	.	41	38
+	+	39	0
+	+	41	38
+
+> ~/Workspace/Codewars/Make them bark!/code.py
+	"	46	18
+	^	46	19
+	.	46	18
+	+	46	18
+
+> ~/Workspace/Codewars/Make them bark!/test.py
+	"	3	5
+	^	1	48
+	.	1	5
+	+	1	5
+
+> ~/Workspace/Codewars/Make them bark!/ControlP
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Workspace/Codewars/WeIrD StRiNg CaSe/test.py
+	"	1	0
+
+> ~/Workspace/Codewars/WeIrD StRiNg CaSe/code.py
+	"	1	0
+	^	41	41
+	.	41	40
+	+	42	7
+	+	36	11
+	+	37	39
+	+	37	30
+	+	42	0
+	+	37	12
+	+	42	23
+	+	37	44
+	+	37	0
+	+	36	30
+	+	36	18
+	+	37	0
+	+	36	11
+	+	37	0
+	+	36	27
+	+	37	11
+	+	34	16
+	+	34	0
+	+	34	28
+	+	34	4
+	+	32	75
+	+	34	0
+	+	42	20
+	+	32	11
+	+	29	6
+	+	32	11
+	+	31	29
+	+	32	19
+	+	30	16
+	+	32	61
+	+	33	18
+	+	37	62
+	+	42	0
+	+	38	0
+	+	39	0
+	+	40	0
+	+	41	40
+
+> ControlP
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Workspace/Codewars/WeIrD StRiNg CaSe/ControlP
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Workspace/Codewars/lol.sh
+	"	1	13
+	^	3	45
+	.	3	44
+	+	1	93
+	+	3	38
+	+	4	0
+	+	1	77
+	+	3	44
+
+> ~/Workspace/Codewars/ControlP
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Workspace/Codewars/Online RPG: player to qualifying stage?/code.py
+	"	15	21
+	^	16	36
+	.	16	36
+	+	16	36
+
+> ~/Workspace/Codewars/Online RPG: player to qualifying stage?/test.py
+	"	1	0
+
+> ~/Workspace/Codewars/Online RPG: player to qualifying stage?/ControlP
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Workspace/Codewars/Are there any arrows left?/code.py
+	"	24	22
+	^	24	23
+	.	24	22
+	+	26	0
+	+	20	23
+	+	21	19
+	+	22	24
+	+	23	30
+	+	26	0
+	+	24	19
+	+	25	14
+	+	26	0
+	+	25	15
+	+	23	40
+	+	24	22
+
+> ~/Workspace/Codewars/Are there any arrows left?/ControlP
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Workspace/Codewars/Are there any arrows left?/test.py
+	"	1	0
+
+> ~/Workspace/Codewars/Welcome to the City/code.py
+	"	19	0
+	^	20	29
+	.	20	28
+	+	21	55
+	+	20	20
+	+	21	0
+	+	20	28
+
+> ~/Workspace/Codewars/Welcome to the City/test.py
+	"	1	0
+
+> ~/Workspace/Codewars/Welcome to the City/ControlP
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Workspace/Codewars/Reverse List Order/code.py
+	"	2	11
+	^	2	5
+	.	3	11
+	+	1	20
+	+	2	4
+	+	3	11
+
+> ~/Workspace/Codewars/test.py
+	"	26	4
+
+> ~/Workspace/Codewars/Function 1 - hello world/test.py
+	"	2	3
+	^	2	4
+	.	2	3
+	+	1	31
+	+	2	3
+
+> ~/Workspace/Codewars/Function 1 - hello world/code.py
+	"	6	0
+	^	8	24
+	.	8	23
+	+	2	320
+	+	7	12
+	+	8	3
+	+	5	2
+	+	2	0
+	+	3	0
+	+	4	0
+	+	4	224
+	+	2	69
+	+	8	23
+
+> ~/Workspace/Codewars/json_response
+	"	1	0
+
+> ~/Workspace/PYTHONSKOJ/shandalar/__init__.py
+	"	1	0
+
+> ~/Workspace/PYTHONSKOJ/shandalar/card.py
+	"	947	24
+	^	947	25
+	.	947	24
+	+	740	15
+	+	743	53
+	+	740	68
+	+	749	53
+	+	750	37
+	+	751	61
+	+	130	50
+	+	399	0
+	+	399	0
+	+	399	17
+	+	402	54
+	+	403	42
+	+	404	25
+	+	405	21
+	+	406	34
+	+	448	0
+	+	407	34
+	+	408	39
+	+	448	0
+	+	79	4
+	+	80	38
+	+	87	0
+	+	79	0
+	+	81	63
+	+	87	0
+	+	82	51
+	+	83	44
+	+	84	41
+	+	87	0
+	+	86	0
+	+	85	24
+	+	81	59
+	+	409	0
+	+	410	0
+	+	410	0
+	+	410	26
+	+	413	72
+	+	414	44
+	+	416	21
+	+	417	35
+	+	419	0
+	+	418	38
+	+	421	14
+	+	421	49
+	+	438	56
+	+	447	0
+	+	438	0
+	+	427	0
+	+	421	48
+	+	426	65
+	+	423	52
+	+	424	22
+	+	422	18
+	+	424	44
+	+	425	27
+	+	426	68
+	+	438	0
+	+	439	0
+	+	440	0
+	+	441	30
+	+	440	35
+	+	441	69
+	+	442	21
+	+	445	12
+	+	446	65
+	+	428	33
+	+	437	0
+	+	430	0
+	+	431	46
+	+	432	41
+	+	433	25
+	+	434	21
+	+	435	35
+	+	436	35
+	+	437	0
+	+	399	0
+	+	398	0
+	+	6	0
+	+	719	0
+	+	714	0
+	+	714	61
+	+	715	42
+	+	716	25
+	+	717	21
+	+	718	32
+	+	701	0
+	+	700	0
+	+	701	29
+	+	704	0
+	+	705	0
+	+	705	0
+	+	704	78
+	+	705	42
+	+	707	21
+	+	709	34
+	+	6	5
+	+	7	0
+	+	6	0
+	+	971	17
+	+	947	24
+	a	732	55
+
+> ~/Workspace/PYTHONSKOJ/shandalar/engine.py
+	"	382	51
+	^	382	52
+	.	382	51
+	+	444	18
+	+	445	40
+	+	446	18
+	+	447	0
+	+	225	87
+	+	158	35
+	+	159	22
+	+	235	33
+	+	369	0
+	+	369	0
+	+	482	0
+	+	490	0
+	+	482	13
+	+	484	28
+	+	487	54
+	+	373	0
+	+	372	0
+	+	373	20
+	+	379	34
+	+	380	35
+	+	373	32
+	+	379	40
+	+	380	41
+	+	374	40
+	+	376	14
+	+	375	31
+	+	376	30
+	+	377	40
+	+	379	13
+	+	380	0
+	+	379	50
+	+	380	52
+	+	350	51
+	+	152	33
+	+	257	0
+	+	260	0
+	+	257	11
+	+	258	52
+	+	259	20
+	+	424	76
+	+	204	69
+	+	205	19
+	+	389	0
+	+	383	0
+	+	389	12
+	+	396	23
+	+	409	12
+	+	374	0
+	+	379	0
+	+	28	0
+	+	12	25
+	+	21	27
+	+	22	35
+	+	20	0
+	+	24	20
+	+	25	43
+	+	27	41
+	+	409	0
+	+	408	0
+	+	397	35
+	+	382	0
+	+	487	74
+	+	496	54
+	+	497	0
+	+	399	0
+	+	398	0
+	+	399	12
+	+	405	23
+	+	406	23
+	+	21	10
+	+	27	61
+	+	26	40
+	+	27	43
+	+	368	36
+	+	369	11
+	+	370	11
+	+	368	27
+	+	476	0
+	+	474	0
+	+	476	32
+	+	477	0
+	+	384	0
+	+	388	0
+	+	384	12
+	+	387	27
+	+	158	59
+	+	244	0
+	+	247	12
+	+	240	33
+	+	247	0
+	+	245	43
+	+	247	0
+	+	246	40
+	+	273	38
+	+	371	48
+	+	381	35
+	+	273	106
+	+	273	71
+	+	274	71
+	+	382	51
+
+> ~/Workspace/PYTHONSKOJ/shandalar/main.py
+	"	44	4
+	^	70	32
+	.	44	0
+	+	62	44
+	+	62	48
+	+	62	45
+	+	52	0
+	+	62	0
+	+	49	0
+	+	62	50
+	+	62	0
+	+	69	0
+	+	62	36
+	+	62	0
+	+	62	0
+	+	62	0
+	+	62	0
+	+	62	0
+	+	62	0
+	+	62	0
+	+	62	0
+	+	62	0
+	+	69	26
+	+	38	21
+	+	62	0
+	+	62	32
+	+	62	32
+	+	62	31
+	+	69	32
+	+	69	36
+	+	56	43
+	+	79	0
+	+	79	0
+	+	79	0
+	+	62	45
+	+	79	0
+	+	79	0
+	+	38	0
+	+	79	0
+	+	49	0
+	+	62	0
+	+	57	0
+	+	62	0
+	+	55	0
+	+	56	45
+	+	56	46
+	+	57	46
+	+	55	45
+	+	54	45
+	+	56	0
+	+	52	48
+	+	53	0
+	+	50	0
+	+	50	0
+	+	49	43
+	+	50	43
+	+	38	37
+	+	37	37
+	+	62	0
+	+	58	0
+	+	59	0
+	+	69	0
+	+	60	0
+	+	61	0
+	+	62	0
+	+	63	0
+	+	69	0
+	+	64	30
+	+	65	0
+	+	68	29
+	+	66	35
+	+	67	0
+	+	52	0
+	+	51	25
+	+	62	0
+	+	79	29
+	+	80	0
+	+	81	0
+	+	79	0
+	+	81	36
+	+	82	0
+	+	83	39
+	+	84	0
+	+	85	21
+	+	89	0
+	+	86	0
+	+	87	0
+	+	88	0
+	+	90	29
+	+	91	0
+	+	92	0
+	+	95	0
+	+	96	0
+	+	93	0
+	+	94	0
+	+	70	31
+	+	71	0
+	+	39	0
+	+	40	0
+	+	41	0
+	+	42	0
+	+	43	0
+	+	44	0
+
+> ~/Workspace/PYTHONSKOJ/shandalar/view.py
+	"	60	0
+	^	286	48
+	.	286	47
+	+	283	20
+	+	283	28
+	+	283	0
+	+	283	0
+	+	283	29
+	+	283	78
+	+	283	0
+	+	253	25
+	+	255	26
+	+	253	22
+	+	255	24
+	+	235	0
+	+	255	0
+	+	235	0
+	+	238	59
+	+	242	26
+	+	275	0
+	+	247	44
+	+	242	0
+	+	241	43
+	+	258	33
+	+	266	0
+	+	258	41
+	+	263	21
+	+	258	34
+	+	260	25
+	+	259	14
+	+	262	43
+	+	263	74
+	+	261	21
+	+	263	93
+	+	242	0
+	+	264	0
+	+	265	24
+	+	215	0
+	+	202	27
+	+	278	42
+	+	298	0
+	+	264	28
+	+	269	0
+	+	274	15
+	+	259	24
+	+	274	0
+	+	270	22
+	+	270	0
+	+	270	0
+	+	269	0
+	+	270	19
+	+	269	24
+	+	270	0
+	+	269	0
+	+	269	18
+	+	270	0
+	+	269	20
+	+	270	24
+	+	219	27
+	+	219	27
+	+	225	43
+	+	229	28
+	+	231	0
+	+	245	16
+	+	269	0
+	+	261	18
+	+	270	0
+	+	234	0
+	+	235	0
+	+	235	0
+	+	235	0
+	+	202	0
+	+	22	0
+	+	203	18
+	+	190	0
+	+	191	81
+	+	192	45
+	+	192	59
+	+	191	51
+	+	192	0
+	+	191	50
+	+	192	59
+	+	262	0
+	+	215	23
+	+	215	0
+	+	219	0
+	+	226	36
+	+	226	51
+	+	226	20
+	+	218	0
+	+	214	26
+	+	214	0
+	+	214	0
+	+	84	71
+	+	85	66
+	+	86	73
+	+	87	60
+	+	88	87
+	+	87	58
+	+	88	101
+	+	81	43
+	+	2	12
+	+	286	47
+	b	1	0
+
+> ~/Workspace/PYTHONSKOJ/shandalar/ControlP
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Workspace/PYTHONSKOJ/shandalar/lol
+	"	1	4
+	.	1	0
+	+	1	0
+
+> ~/Workspace/PYTHONSKOJ/shandalar/controller.py
+	"	10	0
+	^	240	82
+	.	240	81
+	+	242	0
+	+	74	26
+	+	244	38
+	+	242	0
+	+	242	0
+	+	16	0
+	+	196	19
+	+	221	0
+	+	242	0
+	+	197	19
+	+	210	23
+	+	242	12
+	+	243	0
+	+	242	15
+	+	243	19
+	+	244	19
+	+	245	23
+	+	246	23
+	+	130	66
+	+	149	71
+	+	150	51
+	+	154	56
+	+	155	58
+	+	115	0
+	+	114	0
+	+	116	0
+	+	116	0
+	+	118	26
+	+	117	47
+	+	118	0
+	+	117	48
+	+	117	14
+	+	118	40
+	+	119	0
+	+	117	83
+	+	75	12
+	+	137	0
+	+	135	0
+	+	137	18
+	+	140	0
+	+	139	4
+	+	139	7
+	+	139	0
+	+	136	0
+	+	140	0
+	+	211	0
+	+	140	0
+	+	138	0
+	+	216	0
+	+	217	8
+	+	223	0
+	+	217	0
+	+	213	0
+	+	214	0
+	+	215	34
+	+	216	0
+	+	218	34
+	+	220	68
+	+	217	67
+	+	139	54
+	+	215	34
+	+	218	34
+	+	215	34
+	+	258	57
+	+	259	59
+	+	260	72
+	+	261	68
+	+	260	73
+	+	92	52
+	+	98	0
+	+	92	0
+	+	97	79
+	+	98	39
+	+	105	0
+	+	103	0
+	+	98	0
+	+	97	16
+	+	97	47
+	+	25	54
+	+	26	0
+	+	27	31
+	+	25	61
+	+	27	0
+	+	25	45
+	+	97	0
+	+	92	0
+	+	93	0
+	+	94	30
+	+	106	71
+	+	260	0
+	+	261	0
+	+	261	0
+	+	261	0
+	+	209	27
+	+	116	0
+	+	209	0
+	+	235	10
+	+	235	0
+	+	235	0
+	+	240	81
+
+> ~/Workspace/PYTHONSKOJ/shandalar/TODO
+	"	10	0
+	^	10	20
+	.	10	19
+	+	1	47
+	+	1	106
+	+	2	0
+	+	2	3
+	+	1	3
+	+	1	0
+	+	2	0
+	+	2	54
+	+	2	43
+	+	2	54
+	+	2	21
+	+	2	107
+	+	1	0
+	+	14	21
+	+	9	10
+	+	7	0
+	+	2	0
+	+	3	26
+	+	10	19
+
+> ~/Workspace/lucas/lol
+	"	1	0
+	^	2	1
+	.	1	0
+	+	1	200
+	+	1	23
+	+	1	46
+	+	3	36
+	+	4	29
+	+	5	25
+	+	6	29
+	+	7	23
+	+	1	0
+	+	3	0
+	+	4	0
+	+	5	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	4	28
+	+	6	0
+	+	7	0
+	+	8	0
+	+	1	1
+	+	2	0
+	+	1	0
+
+> ~/Workspace/lucas/lucaschess/LinuxInstallation.md
+	"	38	0
+
+> ~/Workspace/lucas/lucaschess/Code/Gestor60.py
+	"	146	0
+
+> ~/Workspace/lucas/lucaschess/Code/Gestor
+	"	1	0
+
+> /tmp/yaourt-tmp-svaante/aur-google-chrome-dev/PKGBUILD
+	"	1	0
+
+> ~/Workspace/PYTHONSKOJ/shandalar/game.py
+	"	303	0
+	^	265	62
+	.	265	62
+	+	40	40
+	+	40	0
+	+	40	31
+	+	40	50
+	+	40	43
+	+	179	54
+	+	166	0
+	+	166	0
+	+	166	0
+	+	165	30
+	+	166	31
+	+	166	0
+	+	166	0
+	+	165	0
+	+	177	0
+	+	162	18
+	+	177	74
+	+	178	43
+	+	177	14
+	+	179	0
+	+	177	0
+	+	177	0
+	+	179	54
+	+	177	0
+	+	171	41
+	+	164	0
+	+	163	0
+	+	164	0
+	+	162	0
+	+	395	24
+	+	396	33
+	+	398	0
+	+	402	0
+	+	399	0
+	+	402	0
+	+	399	45
+	+	400	0
+	+	399	0
+	+	397	0
+	+	398	0
+	+	399	0
+	+	299	40
+	+	294	17
+	+	295	29
+	+	296	0
+	+	298	12
+	+	299	11
+	+	296	40
+	+	173	0
+	+	170	0
+	+	173	0
+	+	171	33
+	+	316	12
+	+	316	33
+	+	299	12
+	+	394	14
+	+	299	45
+	+	296	0
+	+	296	33
+	+	297	48
+	+	296	0
+	+	296	32
+	+	292	37
+	+	305	0
+	+	295	0
+	+	293	0
+	+	305	0
+	+	320	35
+	+	323	16
+	+	325	19
+	+	320	36
+	+	325	31
+	+	316	0
+	+	316	0
+	+	321	11
+	+	326	0
+	+	324	39
+	+	293	33
+	+	293	11
+	+	294	0
+	+	294	0
+	+	294	20
+	+	293	32
+	+	294	30
+	+	293	28
+	+	291	32
+	+	292	39
+	+	293	27
+	+	293	17
+	+	294	29
+	+	294	17
+	+	294	46
+	+	297	17
+	+	293	0
+	+	294	0
+	+	293	0
+	+	296	0
+	+	299	17
+	+	40	0
+	+	265	62
+
+> ~/Workspace/PYTHONSKOJ/shandalar/card_designs.txt
+	"	1	0
+	^	135	0
+	.	140	0
+	+	35	2
+	+	55	0
+	+	106	0
+	+	54	0
+	+	52	0
+	+	56	0
+	+	57	0
+	+	58	81
+	+	60	0
+	+	61	2
+	+	59	0
+	+	60	7
+	+	62	74
+	+	58	81
+	+	64	2
+	+	66	8
+	+	67	1
+	+	68	65
+	+	71	4
+	+	70	7
+	+	72	40
+	+	73	2
+	+	102	0
+	+	103	49
+	+	102	1
+	+	104	0
+	+	102	0
+	+	103	85
+	+	86	0
+	+	100	0
+	+	86	1
+	+	86	2
+	+	88	1
+	+	86	0
+	+	86	0
+	+	89	2
+	+	96	0
+	+	99	2
+	+	86	0
+	+	86	2
+	+	86	4
+	+	97	2
+	+	98	41
+	+	99	0
+	+	98	38
+	+	97	2
+	+	99	0
+	+	97	1
+	+	98	90
+	+	106	0
+	+	105	0
+	+	99	2
+	+	106	78
+	+	106	32
+	+	93	8
+	+	94	2
+	+	121	1
+	+	122	72
+	+	125	1
+	+	124	7
+	+	128	2
+	+	126	79
+	+	50	2
+	+	49	9
+	+	43	1
+	+	43	0
+	+	44	1
+	+	45	43
+	+	39	1
+	+	40	79
+	+	85	2
+	+	94	0
+	+	93	6
+	+	94	0
+	+	86	0
+	+	84	5
+	+	104	2
+	+	86	0
+	+	84	0
+	+	85	2
+	+	84	10
+	+	76	1
+	+	80	0
+	+	75	7
+	+	77	76
+	+	79	2
+	+	81	1
+	+	81	7
+	+	81	44
+	+	81	0
+	+	81	38
+	+	81	2
+	+	81	8
+	+	81	0
+	+	130	0
+	+	129	0
+	+	106	0
+	+	136	0
+	+	135	0
+	+	140	0
+
+> ~/Workspace/PYTHONSKOJ/shandalar/main
+	"	1	0
+
+> ~/Workspace/PYTHONSKOJ/shandalar/.gitignore
+	"	2	13
+	^	2	14
+	.	2	13
+	+	1	8
+	+	2	13
+
+> ~/Workspace/PYTHONSKOJ/shandalar/__Gundo_Preview__
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Workspace/PYTHONSKOJ/shandalar/__Gundo__
+	"	36	1
+	.	1	0
+	+	1	0
+
+> ~/Workspace/PYTHONSKOJ/main.py
+	"	8	22
+	^	8	10
+	.	8	0
+	+	7	27
+	+	8	18
+	+	9	18
+	+	10	24
+	+	7	40
+	+	8	40
+	+	9	40
+	+	10	0
+	+	9	0
+	+	8	0
+	+	7	20
+	+	8	7
+	+	7	7
+	+	8	0
+
+> ~/Workspace/PYTHONSKOJ/ControlP
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0

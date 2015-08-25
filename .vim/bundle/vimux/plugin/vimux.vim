@@ -3,6 +3,7 @@ if exists("g:loaded_vimux") || &cp
 endif
 let g:loaded_vimux = 1
 
+command -nargs=* VimuxRunCommand :call VimuxRunCommand(<args>)
 command VimuxRunLastCommand :call VimuxRunLastCommand()
 command VimuxCloseRunner :call VimuxCloseRunner()
 command VimuxZoomRunner :call VimuxZoomRunner()
@@ -10,8 +11,17 @@ command VimuxInspectRunner :call VimuxInspectRunner()
 command VimuxScrollUpInspect :call VimuxScrollUpInspect()
 command VimuxScrollDownInspect :call VimuxScrollDownInspect()
 command VimuxInterruptRunner :call VimuxInterruptRunner()
-command VimuxPromptCommand :call VimuxPromptCommand()
+command -nargs=? VimuxPromptCommand :call VimuxPromptCommand(<args>)
 command VimuxClearRunnerHistory :call VimuxClearRunnerHistory()
+command VimuxTogglePane :call VimuxTogglePane()
+
+function! VimuxRunCommandInDir(command, useFile)
+    let l:file = ""
+    if a:useFile ==# 1
+        let l:file = shellescape(expand('%:t'), 1)
+    endif
+    call VimuxRunCommand("cd ".shellescape(expand('%:p:h'), 1)." && ".a:command." ".l:file." && cd - > /dev/null")
+endfunction
 
 function! VimuxRunLastCommand()
   if exists("g:VimuxRunnerIndex")
@@ -43,7 +53,7 @@ function! VimuxRunCommand(command, ...)
 endfunction
 
 function! VimuxSendText(text)
-  call VimuxSendKeys('"'.escape(a:text, '"').'"')
+  call VimuxSendKeys('"'.escape(a:text, '"$').'"')
 endfunction
 
 function! VimuxSendKeys(keys)
@@ -80,10 +90,25 @@ function! VimuxCloseRunner()
   endif
 endfunction
 
+function! VimuxTogglePane()
+  if exists("g:VimuxRunnerIndex")
+    if _VimuxRunnerType() == "window"
+        call system("tmux join-pane -d -s ".g:VimuxRunnerIndex." -p "._VimuxOption("g:VimuxHeight", 20))
+        let g:VimuxRunnerType = "pane"
+    elseif _VimuxRunnerType() == "pane"
+		let g:VimuxRunnerIndex=substitute(system("tmux break-pane -d -t ".g:VimuxRunnerIndex." -P -F '#{window_index}'"), "\n", "", "")
+        let g:VimuxRunnerType = "window"
+    endif
+  endif
+endfunction
+
 function! VimuxZoomRunner()
-  if exists("g:VimuxRunnerPaneIndex")
-    call system("tmux resize-pane -Z -t ".g:VimuxRunnerPaneIndex)
-    unlet g:VimuxRunnerPaneIndex
+  if exists("g:VimuxRunnerIndex")
+    if _VimuxRunnerType() == "pane"
+      call system("tmux resize-pane -Z -t ".g:VimuxRunnerIndex)
+    elseif _VimuxRunnerType() == "window"
+      call system("tmux select-window -t ".g:VimuxRunnerIndex)
+    endif
   endif
 endfunction
 
@@ -114,13 +139,14 @@ function! VimuxClearRunnerHistory()
   endif
 endfunction
 
-function! VimuxPromptCommand()
-  let l:command = input(_VimuxOption("g:VimuxPromptString", "Command? "))
+function! VimuxPromptCommand(...)
+  let command = a:0 == 1 ? a:1 : ""
+  let l:command = input(_VimuxOption("g:VimuxPromptString", "Command? "), command)
   call VimuxRunCommand(l:command)
 endfunction
 
 function! _VimuxTmuxSession()
-  return _VimuxTmuxProperty("S")
+  return _VimuxTmuxProperty("#S")
 endfunction
 
 function! _VimuxTmuxIndex()
@@ -132,19 +158,19 @@ function! _VimuxTmuxIndex()
 endfunction
 
 function! _VimuxTmuxPaneIndex()
-    return _VimuxTmuxProperty("P")
+  return _VimuxTmuxProperty("#I.#P")
 endfunction
 
 function! _VimuxTmuxWindowIndex()
-  return _VimuxTmuxProperty("I")
+  return _VimuxTmuxProperty("#I")
 endfunction
 
 function! _VimuxNearestIndex()
-  let panes = split(system("tmux list-"._VimuxRunnerType()."s"), "\n")
+  let views = split(system("tmux list-"._VimuxRunnerType()."s"), "\n")
 
-  for pane in panes
-    if match(pane, "(active)") == -1
-      return split(pane, ":")[0]
+  for view in views
+    if match(view, "(active)") == -1
+      return split(view, ":")[0]
     endif
   endfor
 
@@ -164,9 +190,9 @@ function! _VimuxOption(option, default)
 endfunction
 
 function! _VimuxTmuxProperty(property)
-    return substitute(system("tmux display -p '#".a:property."'"), '\n$', '', '')
+    return substitute(system("tmux display -p '".a:property."'"), '\n$', '', '')
 endfunction
 
 function! _VimuxHasRunner(index)
-  return match(system("tmux list-"._VimuxRunnerType()."s"), a:index.":")
+  return match(system("tmux list-"._VimuxRunnerType()."s -a"), a:index.":")
 endfunction

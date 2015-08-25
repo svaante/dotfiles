@@ -25,6 +25,10 @@ set incsearch
 set smartcase
 set focuscontent
 set visualbell
+set gui=none
+set gui=tabs
+set gui=navigation
+set gui=bookmarks
 colorscheme sol
 
 let mapleader = ","

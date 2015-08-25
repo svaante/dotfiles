@@ -14,15 +14,13 @@
 "-------~---~----------~----------~----
 " Setup bundel
     set rtp+=~/.vim/bundle/vundle/
-    call vundle#rc()
+    call vundle#begin()
     Bundle 'kien/ctrlp.vim'
-    Bundle 'scrooloose/nerdtree'
-    Bundle 'corntrace/bufexplorer'
+    Bundle 'honza/vim-snippets'
 
     Bundle 'Valloric/YouCompleteMe'
     Bundle 'SirVer/ultisnips'
     Bundle 'scrooloose/syntastic'
-    Bundle 'majutsushi/tagbar'
     Bundle 'Raimondi/delimitMate'
 
     Bundle 'sjl/gundo.vim'
@@ -30,12 +28,12 @@
 
     Bundle 'benmills/vimux'
     Bundle 'christoomey/vim-tmux-navigator'
+    call vundle#end()
 " end Setup bundle
 "-------~---~----------~----------~----
 
 "-------~---~----------~----------~----
 " General
-
     " Use X clipboard
     set clipboard+=unnamed
 
@@ -163,7 +161,6 @@
 " Graphics
 
     " Set butiful collor scheme
-    "colorscheme navajo-night
     colorscheme navajo-night
 
     " Enable wildmenu
@@ -301,47 +298,6 @@
         let delimitMate_expand_cr = 1
     " end delimate
 
-    " bufExplorer
-
-        " Show relative path
-        let g:bufExplorerShowRelativePath=0
-
-        " Show detailed help
-        let g:bufExplorerDetailedHelp=0
-
-        " Dont show default help
-        let g:bufExplorerDefaultHelp=0
-
-        " Sort by full file pathname
-        let g:bufExplorerSortBy='mru'
-
-        " Open bufexplorer
-        map <F2> <Leader>bej
-
-    " end bufExplorer
-
-    " NERDTree
-
-        " Dont show hidden files in nerdtree
-        "let NERDTreeShowHidden=1
-
-        " Makes NerdTree close on opening file
-        let NERDTreeQuitOnOpen=1
-
-        " Makes NERDtrees ui minimal
-        "let NERDTreeMinimalUI=1
-
-        " Don't display these kinds of files
-        let NERDTreeIgnore=[ '\.ncb$', '\.suo$', '\.vcproj\.RIMNET', '\.obj$',
-                   \ '\.ilk$', '^BuildLog.htm$', '\.pdb$', '\.idb$',
-                   \ '\.embed\.manifest$', '\.embed\.manifest.res$',
-                   \ '\.intermediate\.manifest$', '^mt.dep$' ]
-
-        " Toggel nerdtree
-        nmap <F1> :NERDTreeToggle <CR>
-
-    " end NERDTree
-
     " eclim
         let g:EclimBrowser='firefox'"
         let g:EclimCompletionMethod = 'omnifunc'
@@ -349,10 +305,36 @@
     " eclim end
 
     " UtilSnips
-        let g:UltiSnipsExpandTrigger="<c-j>"
-        let g:UltiSnipsJumpForwardTrigger="<c-j>"
-        let g:UltiSnipsJumpBackwardTrigger="<c-k>"
     " UtilSnips end
+
+    " Syntastic
+       set statusline+=%#warningmsg#
+       set statusline+=%{SyntasticStatuslineFlag()}
+       set statusline+=%*
+       let g:syntastic_always_populate_loc_list = 0
+       let g:syntastic_auto_loc_list = 0
+       let g:syntastic_check_on_open = 1
+       let g:syntastic_check_on_wq = 0
+    " Syntastic end
+
+    " Ycm
+        let g:ycm_global_ycm_extra_conf=
+                    \ '/home/svaante/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
+        let g:ycm_autoclose_preview_window_after_completion = 1
+        let g:ycm_min_num_of_chars_for_completion = 1
+        let g:ycm_seed_identifiers_with_syntax = 1
+        let g:ycm_add_preview_to_completeopt = 1
+        let g:ycm_show_diagnostics_ui = 0
+        let g:ycm_collect_identifiers_from_tags_files = 1
+        let g:pymode_rope_complete_on_dot = 0
+    " Ycm end
+
+    " CtrlP
+        au BufEnter * cal ctrlp#mrufiles#list(expand('<abuf>', 1))
+        let ctrlp_switch_buffer=0
+        let g:ctrlp_prompt_mappings = { 'PrtExit()': ['<esc>', '<c-c>'] }
+        let g:ctrlp_show_hidden = 1
+    " CtrlP end
 
     " Vimux
         let g:VimuxUseNearestPane=1
@@ -360,94 +342,15 @@
         let g:VimuxHeight=40
     " Vimux end
 
-    " Syntastic
-
-        let g:syntastic_check_on_open = 1
-
-        " Bind s and S to write and write all to remove those pesky signs
-        nmap s :SignClearAll<CR>:w<CR>
-        nmap S :SignClearAll<CR>:wall<CR>
-
-    " Syntastic end
-
-    " Ycm
-
-        let g:ycm_global_ycm_extra_conf=
-                    \ '/home/svaante/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
-
-        let g:ycm_autoclose_preview_window_after_completion = 1
-
-        let g:ycm_min_num_of_chars_for_completion = 1
-
-        let g:ycm_seed_identifiers_with_syntax = 1
-
-        let g:ycm_register_as_syntastic_checker = 1
-
-        let g:ycm_add_preview_to_completeopt = 1
-
-        " Goto def
-        nmap <C-d> :YcmCompleter GoToDefinitionElseDeclaration<CR>
-
-    " Ycm end
-
-    " Tagbar
-
-        let g:tagbar_compact = 1
-
-        let g:tagbar_left = 1
-
-        let g:tagbar_width = 30
-
-        let g:tagbar_autoclose = 1
-
-        let g:tagbar_indent = 2
-
-        let g:tagbar_autofocus = 1
-
-        let g:tagbar_sort = 0
-
-        let g:tagbar_foldlevel = 1
-
-        let g:tagbar_type_c = {
-            \ 'kinds' : [
-                \ 'd:macros:1:0',
-                \ 't:typedefs:0:0',
-                \ 'u:unions',
-                \ 'g:enums',
-                \ 's:structs',
-                \ 'v:variables:0:0',
-                \ 'p:prototypes:1:0',
-                \ 'e:enumerators:0:0',
-                \ 'm:members:0:0',
-                \ 'f:functions',
-            \ ],
-        \ }
-
-        nmap <F4> :TagbarToggle<CR>
-
-    " Tagbar end
-
-    " Ctrlp
-
-        nmap <C-p> :CtrlPMixed<CR>
-
-        let g:ctrlp_working_path_mode = 'rc'
-
-        let g:ctrlp_custom_ignore = '\v%(/\.%(git|hg|svn)|\.%(class|o|png|jpg|jpeg|bmp|tar|jar|tgz|deb|zip)$|/target/)'
-
-    " Ctrlp end
-
-    " Gundo
-
-        nmap <F3> :GundoToggle <CR>
-
-    " Ctrlp end
-
 " end Plugins
 "-------~---~----------~----------~----
 
 "-------~---~----------~----------~----
 " Mappings
+
+    " Map leader to space
+        nnoremap <SPACE> <Nop>
+        map <SPACE> <leader>
 
     " Smash <Esc> remap
         inoremap jk <Esc>
@@ -458,31 +361,11 @@
     " Write with sudo
         cmap w!! w !sudo tee % >/dev/null
 
-    " Insert blank lines without leaving normal mode
-        nmap T O<ESC>
-        nmap t o<ESC>
-
     " Making it easier to execute macro
         nnoremap Q @q
 
     " Closing windows easier
         nnoremap <C-c> :q<CR>
-
-    " Complie program
-        autocmd FileType c,cpp map <buffer> <F5> :call VimuxRunCommand("make -C" . expand("%:p:h"))<CR>
-        autocmd FileType java map <buffer> <F5> :call VimuxRunCommand("classpath2cli " . expand("%:p") .  " cr")<CR>
-
-    " Bind <F9> to open .vimrc
-        nmap <F9> :e $MYVIMRC <CR>
-
-    " Run ctags in the current folder for c++
-        map <F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
-
-    " Toggels the ability to paste without auto comments
-        set pastetoggle=<F2>
-
-    " Change W to w when writing in a hurry
-        cnoreabbrev W w
 
     " Move change windows with hjkl keys
         map <C-h> :wincmd h<CR>
@@ -494,11 +377,51 @@
         imap <C-k> jk:wincmd k<CR>
         imap <C-l> jk:wincmd l<CR>
 
+    " Move down and up
+        noremap J }
+        noremap K {
+
+    " Bind <F9> to open .vimrc
+        nmap <leader>v :e $MYVIMRC <CR>
+
+    " Plugin mappings
+
+        " Gundo toggle map
+            nmap <leader>g :GundoToggle <CR>
+
+        " Goto def in ycm
+            nmap <leader>d :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+        " Change buffer
+            nmap <leader>b :CtrlPBuffer<CR>
+
+        " Change buffer
+            nmap <leader>f :CtrlP<CR>
+
+        " Expand and jump
+            let g:UltiSnipsExpandTrigger="<c-j>"
+            let g:UltiSnipsJumpForwardTrigger="<c-j>"
+            let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
+    " end Plugin mappings
+
 " end Mappings
 "-------~---~----------~----------~----
 
 "-------~---~----------~----------~----
 " Functions
-
+"
+    function s:MkNonExDir(file, buf)
+        if empty(getbufvar(a:buf, '&buftype')) && a:file!~#'\v^\w+\:\/'
+            let dir=fnamemodify(a:file, ':h')
+            if !isdirectory(dir)
+                call mkdir(dir, 'p')
+            endif
+        endif
+    endfunction
+    augroup BWCCreateDir
+        autocmd!
+        autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
+    augroup END
 " end Functions
 "-------~---~----------~----------~----

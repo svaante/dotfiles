@@ -1,0 +1,243 @@
+# Den här viminfo-filen genererades av Vim 7.4.
+# Du får redigera den om du är försiktig!
+
+# Värde av 'encoding' när den här filen blev skriven
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# Senaste Sökmönster:
+~MSle0~/W_DOCK
+
+# Senaste Substitute Sökmönster:
+~MSle0&(*game_map).tiles[y][x]
+
+# Senaste ersättningssträng:
+$GET_TILE((*game_map), x, y)
+
+# Kommandorad Historia (nyaste till äldsta):
+:w
+:q
+:q!
+:c
+:wq
+:call <SNR>68_GundoClose()
+:set paste
+:s
+:e 
+:CtrlPClearCache
+:cd ~
+:e ~/.i3/config
+:e /home/svaante/.lifebarrc
+:e ~/.lifebarrc
+:retab
+:call <SNR>72_GundoClose()
+:e .tmux.conf
+:colorscheme
+:VundleInstall
+:r
+:e testmap.c
+:e map.c
+:e mods.h
+:e QHACK.H
+:e DUNGEON.C
+:e score.h
+:e new_level.c
+:e daemon.c
+:e main_no.c
+:j
+:close
+:e Workspace/edaf05/solved_exersice1.py
+:e Workspace/ruge/MAKEFILE
+:e MAKEFILE
+:%s/(*game_map).tiles[y][x]/GET_TILE((*game_map), x, y)/g
+:%s/random/random_int/g
+:%s/.map/tiles/g
+:%s/pos/possition/gg
+:%s/creture/creature/gg
+:edit!
+:edit
+:read
+:YcmDebugInfo
+:YcmCompleter
+:let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
+:let g:ycm_global_ycm_extra_conf '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
+:e .vim/bundle/YouCompleteMe/.ycm_extra_conf.py
+:Syn 
+:SyntasticInfo
+:SyntasticCheck
+:Syn
+:e Workspace/ruge/main.c
+:CtrlBuff
+:CtrlPBuffer
+:CtrlPBuffers
+:CtrlP
+:buffers
+:b
+:Unite file
+:VundleClean
+:e .vimrc
+:e .i3/config
+:e .vimperatorrc
+:w !sudo tee % >/dev/null
+:e! .i3status.conf
+:bn
+:e! .Xresources
+:e .Xresources
+:b .xinitrc
+:e .Xresources !
+:e ~/.Xresources
+
+# Söksträng Historia (nyaste till äldsta):
+?/W_DOCK
+?/W_DOCK_BOTT
+?/dock
+?/pla
+?/plan
+?/dme
+?/aaaaa
+?/t
+?/work
+?/box
+?/conf
+?/divstyle
+?/none
+?/GROOVE
+?/bar
+?/opaci
+?/plug
+?/tmux
+?/vim
+?/gui
+?/back
+? \<if\>
+?/inside
+?/byte
+?/creat
+?/prin
+? (*game_map).tiles[y][x]
+? random
+?/rand
+? .map
+?/map
+?/genera
+?/generate_map
+? pos
+? creture
+?/ycm
+?/class
+?/spot
+? @$
+?/YCM
+?/synta
+?/syntast
+?/syntas
+?/func
+?/fuc
+?/mappi
+?/lea
+?/util
+?/ctrlpbuff
+?/leader
+?/space
+?/mapp
+?/ctrlp
+?/bind
+?/web
+?/term
+?/set
+?/set gui
+?/setjjj
+?/filetype
+?/dmen
+?/tab
+
+# Uttryck Historia (nyaste till äldsta):
+
+# Inmatningsrad Historia (nyaste till äldsta):
+@n
+@Y
+
+# Inmatningsrad Historia (nyaste till äldsta):
+
+# Register:
+"0	CHAR	0
+	7
+"1	CHAR	0
+	resize shrink width 10000px; resize grow width 400px; resize shrink height 10000px; resize grow height 800px;
+	
+	
+"2	LINE	0
+	exec dwm
+"3	LINE	0
+	for_window [title="^plank$"] floating enable
+	for_window [title="^Plank$"] floating enable
+"4	LINE	0
+	i
+"5	LINE	0
+	# Window type settings
+	wintypes:
+	{
+	  tooltip = { fade = true; shadow = true; opacity = 0.75; focus = true; };
+	
+"6	LINE	0
+	:s
+"7	LINE	0
+	    "name = 'poniesbox'"
+"8	LINE	0
+	s
+"9	LINE	0
+	
+"q@	CHAR	0
+	jk0f.PQ
+""-	CHAR	0
+	 
+
+# Filmärken:
+'0  191  101  ~/.i3/config
+'1  164  27  ~/i3/src/match.c
+'2  230  28  ~/i3/src/manage.c
+'3  84  0  ~/i3/i3-nagbar/main.c
+'4  23  0  ~/.i3/config
+'5  39  12  ~/Downloads/Numix/dock.theme
+'6  2  0  ~/.xinitrc
+'7  4  7  ~/.xinitrc
+'8  1  0  ~/.config/compton.conf
+'9  34  0  ~/.config/plank/dock1/settings
+
+# Hopplista (nyaste först):
+-'  191  101  ~/.i3/config
+-'  1  0  ~/.i3/config
+-'  2  0  ~/.i3/config
+-'  164  27  ~/i3/src/match.c
+-'  165  29  ~/i3/src/match.c
+-'  6  0  ~/i3/src/match.c
+-'  1  0  ~/i3/src/match.c
+-'  230  28  ~/i3/src/manage.c
+-'  240  32  ~/i3/src/manage.c
+-'  214  26  ~/i3/src/manage.c
+-'  108  4  ~/i3/src/manage.c
+-'  2  0  ~/i3/src/manage.c
+-'  1  0  ~/i3/src/manage.c
+-'  84  0  ~/i3/i3-nagbar/main.c
+-'  1  0  ~/i3/i3-nagbar/main.c
+-'  23  0  ~/.i3/config
+-'  39  12  ~/Downloads/Numix/dock.theme
+-'  1  0  ~/Downloads/Numix/dock.theme
+-'  2  0  ~/.xinitrc
+-'  1  0  ~/.xinitrc
+-'  4  7  ~/.xinitrc
+-'  27  0  ~/.i3/config
+-'  1  0  ~/.config/compton.conf
+-'  34  0  ~/.config/plank/dock1/settings
+-'  1  0  ~/.config/plank/dock1/settings
+-'  184  0  ~/.i3/config
+-'  20  0  ~/.i3/config
+-'  201  0  ~/.i3/config
+-'  78  0  ~/.i3/config
+-'  35  0  ~/.i3status.conf
+-'  1  0  ~/.i3status.conf
+-'  142  0  ~/.config/compton.conf
+-'  101  0  ~/.config/compton.conf
+-'  79  0  ~/.i3/con
