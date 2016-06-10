@@ -5,13 +5,6 @@ SAVEHIST=10000
 setopt appendhistory autocd extendedglob
 unsetopt beep nomatch
 bindkey -v
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
-zstyle :compinstall filename '/home/svaante/.zshrc'
-
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
 
 export TERM='rxvt-256color'
 
@@ -43,8 +36,8 @@ export PATH="${PATH}:${HOME}/bin:${HOME}/bin"
 #-----------------------------
 # Dircolors
 #-----------------------------
-LS_COLORS='rs=0:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:tw=30;42:ow=34;42:st=37;44:ex=01;32:';
-export LS_COLORS
+#LS_COLORS='rs=0:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:tw=30;42:ow=34;42:st=37;44:ex=01;32:';
+#export LS_COLORS
 
 #------------------------------
 # Keybindings
@@ -75,15 +68,10 @@ bindkey "\eOF" end-of-line
 #------------------------------
 # Alias stuff
 #------------------------------
-alias ls="ls++ "
-alias lsl="ls++ -a "
-alias ll="ls --color -lh"
 alias spm="sudo pacman"
-alias spmc="sudo pacman-color"
-alias gr="gvim --remote-silent"
-alias vr="vim --remote-silent"
 alias day="xcalib -i -a"
 alias night="xcalib -i -a"
+
 #------------------------------
 # Comp stuff
 #------------------------------
@@ -107,9 +95,6 @@ zstyle ':completion:*:kill:*' force-list always
 
 zstyle ':completion:*:*:killall:*' menu yes select
 zstyle ':completion:*:killall:*' force-list always
-
-#- complete pacman-color the same as pacman
-compdef _pacman pacman-color=pacman
 
 #------------------------------
 # Window title
@@ -163,7 +148,7 @@ eval PR_HOST='${PR_WHITE}%M${PR_NO_COLOR}' # no SSH
 fi
 # set the prompt
 #PS1=$'${PR_CYAN}[${PR_USER}${PR_CYAN}@${PR_HOST}${PR_CYAN}][${PR_BLUE}%~${PR_CYAN}]${PR_USER_OP} '
-PS1=$'${PR_USER}${PR_RED}@${PR_HOST} ${PR_WHITE}%~ ${PR_USER_OP} '
+PS1=$'${PR_USER}${PR_RED}@${PR_HOST} ${PR_WHITE}%~ \n${PR_USER_OP} '
 PS2=$'%_>'
 }
 

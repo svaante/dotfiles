@@ -1,1 +1,0 @@
-/home/svaante/.dwm/config.h

@@ -13,18 +13,30 @@
 
 "-------~---~----------~----------~----
 " Setup bundel
-    set rtp+=~/.vim/bundle/vundle/
+    set rtp+=~/.vim/bundle/Vundle.vim/
     call vundle#begin()
+    Plugin 'VundleVim/Vundle.vim'
+
     Bundle 'kien/ctrlp.vim'
+    Bundle 'mileszs/ack.vim'
+
+    Bundle 'SirVer/ultisnips'
     Bundle 'honza/vim-snippets'
 
-    Bundle 'Valloric/YouCompleteMe'
-    Bundle 'SirVer/ultisnips'
     Bundle 'scrooloose/syntastic'
+    Bundle 'Valloric/YouCompleteMe'
+    Bundle 'rdnetto/YCM-Generator'
+
     Bundle 'Raimondi/delimitMate'
+    Bundle 'tpope/vim-surround'
+    Bundle 'wellle/targets.vim'
 
     Bundle 'sjl/gundo.vim'
+
+    Bundle 'ConradIrwin/vim-bracketed-paste'
+
     Bundle 'tpope/vim-fugitive'
+    Bundle 'airblade/vim-gitgutter'
 
     Bundle 'benmills/vimux'
     Bundle 'christoomey/vim-tmux-navigator'
@@ -262,36 +274,6 @@
 "-------~---~----------~----------~----
 
 "-------~---~----------~----------~----
-" Tags
-
-    " When compleating show whole tag
-    set showfulltag
-
-    " Look for tags
-    set tags+=./tags
-
-    " Set tags for std
-    set tags+=~/.vim/tags/std
-
-    " Set tags for ql
-    set tags+=~/.vim/tags/gl
-
-    " Set tags for qt4
-    set tags+=~/.vim/tags/qt4
-
-    " Set tags for sfml
-    set tags+=~/.vim/tags/sfml
-
-    " Set tags for sdl
-    set tags+=~/.vim/tags/sdl
-
-    " Set tags for libspotify
-    set tags+=~/.vim/tags/libspotify
-
-" end Tags
-"-------~---~----------~----------~----
-
-"-------~---~----------~----------~----
 " Plugins
 
     " delimate
@@ -304,13 +286,11 @@
         let g:EclimJavaValidate=1
     " eclim end
 
-    " UtilSnips
-    " UtilSnips end
-
     " Syntastic
        set statusline+=%#warningmsg#
        set statusline+=%{SyntasticStatuslineFlag()}
        set statusline+=%*
+       let g:syntastic_javascript_checkers = ['jshint']
        let g:syntastic_always_populate_loc_list = 0
        let g:syntastic_auto_loc_list = 0
        let g:syntastic_check_on_open = 1
@@ -333,7 +313,6 @@
         au BufEnter * cal ctrlp#mrufiles#list(expand('<abuf>', 1))
         let ctrlp_switch_buffer=0
         let g:ctrlp_prompt_mappings = { 'PrtExit()': ['<esc>', '<c-c>'] }
-        let g:ctrlp_show_hidden = 1
     " CtrlP end
 
     " Vimux
