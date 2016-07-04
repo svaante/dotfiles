@@ -1,4 +1,5 @@
 #!/bin/bash
+
 pwd=
 files=(
     ".vimrc"
@@ -6,6 +7,7 @@ files=(
     ".zshrc"
     ".tmux.conf"
     ".live.sh"
+    ".vimperatorrc"
 )
 for FILE in "${files[@]}"
 do

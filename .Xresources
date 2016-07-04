@@ -1,5 +1,5 @@
 URxvt.scrollBar: false
-URxvt.font: xft:Monospace:pixelsize=13.0
+URxvt.font: xft:Monospace:pixelsize=14.0
 
 URxvt.perl-ext-common: default,clipboard
 

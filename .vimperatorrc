@@ -29,7 +29,7 @@ set gui=none
 set gui=tabs
 set gui=navigation
 set gui=bookmarks
-colorscheme sol
+colorscheme solarized-light
 
 let mapleader = ","
 
@@ -67,132 +67,6 @@ command! -complete=history -nargs=+ -description="Open history in a new tab" hta
 
 
 let g:auto_append_anchor = "true"
-
-
-" ime_controller.js {{{2
-let g:ex_ime_mode = "inactive"
-let g:textarea_ime_mode = "inactive"
-
-
-" ldrize_cooperation.js {{{2
-noremap <Leader>, :toggleldrc<CR>
-let g:ldrc_enable = "true"
-let g:ldrc_captureMappings = "['j','k','p','o']"
-let g:ldrc_intelligence_bind = "true"
-let g:ldrc_hints = "true"
-let g:ldrc_skip = "0.1"
-
-
-" localkeymode.js {{{2
-let g:localkeymode_enable = "true"
-js <<EOM
-liberator.globalVariables.localKeyMappings = [
-[/www\.(nicovideo\.jp|youtube\.com)\/watch/, [
-['p s S v V m r c f F'],
-['p', ':stplay'],
-['s', ':stseek! +10'],
-['S', ':stseek! -10 '],
-['v', ':stvolume! +10 '],
-['V', ':stvolume! -10 '],
-['m', ':stmute'],
-['r', ':strepeat'],
-['c', ':stcomment'],
-['f', ':stlarge'],
-['F', ':stfullscreen']
-]],
-];
-EOM
-
-
-" maine_coon.js {{{2
-let g:maine_coon_style = "height: 1em; margin: 0; padding: 3px; border: none; text-align: left; color: #7090d0; font: 11px/1 sans-serif; background: #0c0c0c;"
-
-
-" no_reading.js {{{2
-let g:no_reading_do_echo = 1
-
-
-
-" sbmcommentsviewer.js {{{2
-let g:def_sbm_format = "timestamp,id,tags,comment"
-let g:def_sbms = "h"
-noremap <Leader>bc :viewSBMComments<CR>
-
-
-" statusline-toolbar.js {{{2
-"lazy set statuslinetoolbars=feed-button,lpt_lastpass-compact-btn,greasemonkey-tbb
-
-" Toggle Autopagerize {{{2
-javascript <<EOM
-let (evaluateXPath = util.evaluateXPath || buffer.evaluateXPath) {
-commands.addUserCommand(
-['autopagerize'],
-'Toggle AutoPagerize',
-function (args) {
-buffer.followLink(
-evaluateXPath('id("autopagerize_help")/div/a[@class="autopagerize_link"]').snapshotItem(0)
-);
-},
-{},
-true
-);
-}
-EOM
-
-
-
-
-" Styles {{{1
-style -name liberator-statusline-fix chrome://* <<EOM
-#liberator-statusline {
-  -moz-box-align: center !important;
-  -moz-box-pack: center !important;
-  margin-right: 0.5em !important;
-}
-EOM
-
-style -name liberator-customize-toolbar-fix chrome://* <<EOM
-  #liberator-customize-toolbar {
-    -moz-box-align: center !important;
-    -moz-box-pack: center !important;
-    -moz-appearance: none !important;
-    min-width: none !important;
-    min-height: none !important;
-  }
-
-  #liberator-customize-toolbar > *:-moz-any(image, toolbarbutton) {
-    max-height: none !important;
-  }
-
-  #liberator-customize-toolbar toolbarbutton,
-  #liberator-customize-toolbar statusbarpanel {
-    -moz-box-align: center !important;
-    -moz-box-pack: center !important;
-    -moz-appearance: none !important;
-    margin: 0 1px !important;
-    padding: 0 !important;
-  }
-
-  #liberator-customize-toolbar #restore-button,
-  #liberator-customize-toolbar .toolbarbutton-1:not([type="menu-button"]),
-  #liberator-customize-toolbar .toolbarbutton-1 > .toolbarbutton-menubutton-button,
-  #liberator-customize-toolbar .toolbarbutton-menubutton-dropmarker {
-    background: none !important;
-    border: none !important;
-    min-width: none !important;
-    max-width: none !important;
-    max-height: none !important;
-    min-height: none !important;
-    border-radius: none !important;
-    -moz-box-shadow: none !important;
-  }
-EOM
-
-
-" AutoCmds {{{1
-" Minibuffer オブジェクト取れなくなってしまったのでとりあえず無効に
-"lazy minibuffer LDRize::disable-smooth-scroll
-
 
 " Mappings {{{1
 
@@ -250,6 +124,5 @@ inoremap <C-n> <Down>
 
 
 " End {{{1
-source! ~/.vimperatorrc.local
 
 " vim: ts=2 sw=2 sts=2 fdm=marker ft=vimperator

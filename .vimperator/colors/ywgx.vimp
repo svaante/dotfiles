@@ -1,5 +1,6 @@
 " ==Vimperator_Color_Scheme==
 "   name:ywgx
+"   url: http://code.google.com/p/vimperator-labs/issues/detail?id=510&q=label%3Aproject-vimperator%20label%3Atype-colorscheme&colspec=ID%20Summary%20Project%20Type%20Status%20Priority%20Stars%20Owner
 " ==ywgx_Color_Scheme==
 hi Normal background:#000000;color:#afafaf;font-size:12pt;font-family:monospace
 hi CmdLine background:#000000;color:#00cc22;font-size:12pt;font-family:monospace;font-weight:normal;padding:0px 3px

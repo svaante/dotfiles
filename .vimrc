@@ -370,6 +370,9 @@
 
         " Goto def in ycm
             nmap <leader>d :YcmCompleter GoToDefinitionElseDeclaration<CR>
+            "
+        " Goto ref in ycm
+            nmap <leader>r :YcmCompleter GoToReferences<CR>
 
         " Change buffer
             nmap <leader>b :CtrlPBuffer<CR>
