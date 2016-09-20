@@ -1,18 +1,3 @@
-URxvt.scrollBar: false
-URxvt.font: xft:Monospace:pixelsize=14
-
-URxvt.perl-ext-common: default,clipboard
-
-Then disable iso14755:
-
-URxvt.iso14755: False
-URxvt.keysym.Shift-Control-C: perl:clipboard:copy
-URxvt.keysym.Shift-Control-V: perl:clipboard:paste
-URxvt.clipboard.copycmd:  xsel -ib
-URxvt.clipboard.pastecmd: xsel -ob
-URxvt.transparent: true
-URxvt.shading:20
-
 ! X11 colors pieced together by Dmitry Medvinsky.
 ! Based on Vim colorscheme "badwolf" pieced together by Steve Losh.
 
