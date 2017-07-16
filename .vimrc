@@ -6,7 +6,6 @@
 "-------~---~----------~----------~----
 " Basics
     set nocompatible
-    set background=dark
     filetype off
 " end Basics
 "-------~---~----------~----------~----
@@ -38,8 +37,14 @@
     Bundle 'tpope/vim-fugitive'
     Bundle 'airblade/vim-gitgutter'
 
-    Bundle 'benmills/vimux'
     Bundle 'christoomey/vim-tmux-navigator'
+
+    Bundle 'chriskempson/base16-vim'
+
+    Bundle 'LaTeX-Box-Team/LaTeX-Box'
+
+    Bundle 'vimwiki/vimwiki'
+
     call vundle#end()
 " end Setup bundle
 "-------~---~----------~----------~----
@@ -64,24 +69,6 @@
     " Switch buffers w/o saving
     set hidden
 
-    " Sets title of vim
-    set title
-
-    " Make vim remember
-    set history=1000
-
-    " Make vim remember
-    set undolevels=1000
-
-    " Make vim remember
-    set undoreload=1000
-
-    " Set undo dir
-    set undodir=~/.vim/undo
-
-    " Use undofile
-    set undofile
-
     " Super low delay
     set timeoutlen=500
 
@@ -89,7 +76,7 @@
     set backspace=indent,eol,start
 
     " Support fileformats in this order
-    set fileformats=unix,dos,mac
+    set fileformats=unix,mac,dos
 
     " Set incremental search
     set incsearch
@@ -100,11 +87,14 @@
     " Higlight search
     set hlsearch
 
-    " Shortens message to lose press to con
-    set shortmess=aOstT
+    " Do case-sensitive if there's a capital letter
+    set smartcase
 
     " Read a file that has changed
     set autoread
+
+    " Recursive find
+    set path+=**
 
 " end General
 "-------~---~----------~----------~----
@@ -172,8 +162,8 @@
 "-------~---~----------~----------~----
 " Graphics
 
-    " Set butiful collor scheme
-    colorscheme navajo-night
+    " Colorscheme
+    colorscheme base16-default-dark
 
     " Enable wildmenu
     set wildmenu
@@ -183,6 +173,9 @@
 
     " Show line numbers
     set number
+
+    " Show relative line numbers
+    set relativenumber
 
     " Show cmd
     set showcmd
@@ -201,6 +194,10 @@
 
     " Ruler to limit the line length
     set colorcolumn=81
+
+    " Split below
+    set splitbelow
+
 " end Graphics
 "-------~---~----------~----------~----
 
@@ -235,19 +232,16 @@
     set smarttab
 
     " Uses linebreaker
-    set lbr
+    set linebreak
 
     " Uses auto indent
-    set ai
+    set autoindent
 
     " Uses smart indet
-    set si
+    set smartindent
 
     " Uses wrap lines
     set wrap
-
-    " Disabels pastemode when leaving insertmode
-    au InsertLeave * set nopaste
 
 " end Text and tab
 "-------~---~----------~----------~----
@@ -263,9 +257,6 @@
 
     " Print unprintable chars
     set list
-
-    " Does what is says
-    let java_allow_cpp_keywords=1
 
     " Syntax coloring lines are to long
     set synmaxcol=2048
@@ -290,9 +281,11 @@
        set statusline+=%#warningmsg#
        set statusline+=%{SyntasticStatuslineFlag()}
        set statusline+=%*
-       let g:syntastic_javascript_checkers = ['jshint']
+       let g:syntastic_python_flake8_exec = 'python3'
+       let g:syntastic_python_flake8_args = ['-m', 'flake8']
+       let g:syntastic_javascript_checkers = ['eslint']
        let g:syntastic_always_populate_loc_list = 0
-       let g:syntastic_cpp_compiler = 'cang++'
+       let g:syntastic_cpp_compiler = 'clang++'
        let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
        let g:syntastic_auto_loc_list = 0
        let g:syntastic_check_on_open = 1
@@ -300,8 +293,6 @@
     " Syntastic end
 
     " Ycm
-        let g:ycm_global_ycm_extra_conf=
-                    \ '/home/svaante/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
         let g:ycm_autoclose_preview_window_after_completion = 1
         let g:ycm_min_num_of_chars_for_completion = 1
         let g:ycm_seed_identifiers_with_syntax = 1
@@ -317,12 +308,6 @@
         let g:ctrlp_prompt_mappings = { 'PrtExit()': ['<esc>', '<c-c>'] }
     " CtrlP end
 
-    " Vimux
-        let g:VimuxUseNearestPane=1
-        let g:VimuxOrientation="h"
-        let g:VimuxHeight=40
-    " Vimux end
-
 " end Plugins
 "-------~---~----------~----------~----
 
@@ -336,8 +321,9 @@
     " Smash <Esc> remap
         inoremap jk <Esc>
         cnoremap jk <Esc>
-        inoremap kj <Esc>
-        cnoremap kj <Esc>
+
+    " Make Y consistent with C and D
+        nnoremap Y y$
 
     " Write with sudo
         cmap w!! w !sudo tee % >/dev/null
@@ -353,17 +339,9 @@
         map <C-j> :wincmd j<CR>
         map <C-k> :wincmd k<CR>
         map <C-l> :wincmd l<CR>
-        imap <C-h> jk:wincmd h<CR>
-        imap <C-j> jk:wincmd j<CR>
-        imap <C-k> jk:wincmd k<CR>
-        imap <C-l> jk:wincmd l<CR>
 
-    " Move down and up
-        noremap J }
-        noremap K {
-
-    " Bind <F9> to open .vimrc
-        nmap <leader>v :e $MYVIMRC <CR>
+    " Fast buffer open
+        nnoremap gb :ls<cr>:e #
 
     " Plugin mappings
 
@@ -392,20 +370,3 @@
 " end Mappings
 "-------~---~----------~----------~----
 
-"-------~---~----------~----------~----
-" Functions
-"
-    function s:MkNonExDir(file, buf)
-        if empty(getbufvar(a:buf, '&buftype')) && a:file!~#'\v^\w+\:\/'
-            let dir=fnamemodify(a:file, ':h')
-            if !isdirectory(dir)
-                call mkdir(dir, 'p')
-            endif
-        endif
-    endfunction
-    augroup BWCCreateDir
-        autocmd!
-        autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
-    augroup END
-" end Functions
-"-------~---~----------~----------~----
