@@ -29,7 +29,6 @@
     set nobackup                        " Dissables backup
     set nowritebackup                   " Remove saftynet
     set noswapfile                      " Remove saftynet
-    set lazyredraw                      " Do not redraw on macro
     set hidden                          " Switch buffers w/o saving
     set timeoutlen=500                  " Super low delay
     set backspace=indent,eol,start      " Make backspace more flexible
@@ -40,25 +39,17 @@
     set smartcase                       " Do case-sensitive if there's a capital letter
     set autoread                        " Read a file that has changed
     set path+=**                        " Recursive find
+    set tags=tags;/                     " Bubble search for for tags files
+    if executable('ack')                " Set ack if availiable
+        set grepprg=ack
+    endif
 " end General
 "-------~---~----------~----------~----
 
 "-------~---~----------~----------~----
 " Statusline
-    function! GitBranch()
-        return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
-    endfunction
-
-    function! StatuslineGit()
-      let l:branchname = GitBranch()
-      return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
-    endfunction
-
     set laststatus=2                    " Show status always
     set statusline=                     " Empty statusline
-    set statusline+=%#PmenuSel#         " Color
-    set statusline+=%{StatuslineGit()}  " Branch name
-    set statusline+=%#LineNr#           " Color
     set statusline+=%t                  " File name tail
     set statusline+=%h                  " Help file flag
     set statusline+=%m                  " Modified flag
@@ -86,7 +77,7 @@
     set relativenumber                  " Show relative line numbers
     set showcmd                         " Show cmd
     set showmatch                       " Show matching brackets
-    set colorcolumn=81                  " Ruler to limit the line length
+    set colorcolumn=81                  " Colum to limit the line length
 " end Graphics
 "-------~---~----------~----------~----
 
@@ -115,20 +106,19 @@
 
 "-------~---~----------~----------~----
 " Mappings
-    nnoremap <SPACE> <Nop>              " Unmap space
-    map <SPACE> <leader>                " Map leader to space
-    imap jk <Esc>                       " Smash <Esc> remap
-    cmap jk <Esc>                       " Smash <Esc> remap
-    nnoremap Y y$                       " Make Y consistent with C and D
-    cmap w!! w !sudo tee % >/dev/null   " Write with sudo
-    nnoremap Q @q                       " Making it easier to execute macro
-    map <C-h> :wincmd h<CR>             " Move change windows to hjkl
-    map <C-j> :wincmd j<CR>             " Move change windows to hjkl
-    map <C-k> :wincmd k<CR>             " Move change windows to hjkl
-    map <C-l> :wincmd l<CR>             " Move change windows to hjkl
-    nnoremap <leader>b :ls <CR>:e #     " Fast buffer switch
-    nmap <leader>d :w !git diff % -<CR> " Git diff
-    nmap <leader>t <C-]>                " Goto tag
+    nnoremap <SPACE> <Nop>
+    map <SPACE> <leader>
+    imap jk <Esc>
+    cmap jk <Esc>
+    nnoremap Y y$
+    cmap w!! w !sudo tee % >/dev/null
+    cnoremap gr silent gr
+    nnoremap Q @q
+    map <C-h> :wincmd h<CR>
+    map <C-j> :wincmd j<CR>
+    map <C-k> :wincmd k<CR>
+    map <C-l> :wincmd l<CR>
+    nmap <leader> d :w !git diff % - <CR>
 " end Mappings
 "-------~---~----------~----------~----
 
