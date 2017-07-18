@@ -94,10 +94,8 @@
     set expandtab                       " Use the apropriate spaces
     set shiftwidth=4                    " Sets shift with to 4
     set tabstop=4                       " Sets tab stop to 4
-    set smarttab                        " Use smart tab
-    set linebreak                       " Uses linebreaker
-    set autoindent                      " Uses auto indent
-    set smartindent                     " Uses smart indet
+    set softtabstop=4                   " Set soft tab stop
+    set smarttab                        " Smart tab
     set wrap                            " Uses wrap lines
     set list                            " Print unprintable chars
     set listchars=tab:>~,nbsp:_,trail:. " Set unprintable chars
@@ -119,11 +117,16 @@
     map <C-k> :wincmd k<CR>
     map <C-l> :wincmd l<CR>
     nmap <leader> d :w !git diff % - <CR>
+    command Wall wall
+    command Wq wq
+    command W w
+    command E e
 " end Mappings
 "-------~---~----------~----------~----
 
 "-------~---~----------~----------~----
 " Plugins
     autocmd! BufWritePost * Neomake     " Run Neamake on bufwrite
+    let g:neomake_javascript_enabled_makers = ['eslint']
 " end Plugins
 "-------~---~----------~----------~----
