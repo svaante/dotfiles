@@ -107,7 +107,7 @@
     nnoremap <SPACE> <Nop>
     map <SPACE> <leader>
     imap jk <Esc>
-    cmap jk <Esc>
+    cmap jk <C-f>
     nnoremap Y y$
     cmap w!! w !sudo tee % >/dev/null
     cnoremap gr silent gr
