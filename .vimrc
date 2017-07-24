@@ -43,6 +43,8 @@
     if executable('ack')                " Set ack if availiable
         set grepprg=ack
     endif
+    autocmd FileType gitcommit          " Set spell on gitcommit messages
+    \ setlocal spell spelllang=en_us
 " end General
 "-------~---~----------~----------~----
 
@@ -50,7 +52,7 @@
 " Statusline
     set laststatus=2                    " Show status always
     set statusline=                     " Empty statusline
-    set statusline+=%t                  " File name tail
+    set statusline+=%f                  " File name tail
     set statusline+=%h                  " Help file flag
     set statusline+=%m                  " Modified flag
     set statusline+=%r                  " Read only flag
@@ -116,7 +118,6 @@
     map <C-j> :wincmd j<CR>
     map <C-k> :wincmd k<CR>
     map <C-l> :wincmd l<CR>
-    nmap <leader> d :w !git diff % - <CR>
     command Wall wall
     command Wq wq
     command W w
