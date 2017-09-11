@@ -112,7 +112,6 @@
     cmap jk <C-f>
     nnoremap Y y$
     cmap w!! w !sudo tee % >/dev/null
-    cnoremap gr silent gr
     nnoremap Q @q
     map <C-h> :wincmd h<CR>
     map <C-j> :wincmd j<CR>
@@ -129,5 +128,17 @@
 " Plugins
     autocmd! BufWritePost * Neomake     " Run Neamake on bufwrite
     let g:neomake_javascript_enabled_makers = ['eslint']
+    let g:neomake_tex_enabled_makers = ['make', 'open']
+    let g:neomake_tex_make_maker = {
+        \ 'exe': 'pdflatex',
+        \ 'args': [],
+        \ 'serialize': 1,
+        \ }
+    let g:neomake_tex_open_maker = {
+        \ 'exe': 'open',
+        \ 'args': ['%:p:r.pdf'],
+        \ 'append_file': 0,
+        \ 'serialize': 1,
+        \ }
 " end Plugins
 "-------~---~----------~----------~----

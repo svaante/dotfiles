@@ -1,4 +1,4 @@
 dotfiles
 ========
 
-Dotfiles what else
+stow <folder>
