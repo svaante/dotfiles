@@ -1,0 +1,16 @@
+set nosmoothscroll
+set noautofocus
+set typelinkhints
+let searchlimit = 10
+let scrollstep = 70
+let barposition = "top"
+let defaultnewtabpage = "false"
+let searchalias g = "google"
+let searchalias y = "youtube"
+let searchalias d = "duckduckgo"
+let searchalias w = "wikipedia"
+map <C-d> scrollPageDown
+map <C-u> scrollPageUp
+map d closeTab
+map b B
+imap jk <Esc>
