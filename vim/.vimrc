@@ -38,8 +38,6 @@
     set hlsearch                        " Higlight search
     set smartcase                       " Do case-sensitive if there's a capital letter
     set autoread                        " Read a file that has changed
-    set path+=**                        " Recursive find
-    set tags=tags;/                     " Bubble search for for tags files
     if executable('ack')                " Set ack if availiable
         set grepprg=ack
     endif
@@ -125,20 +123,15 @@
 "-------~---~----------~----------~----
 
 "-------~---~----------~----------~----
+" Autocmd
+    autocmd! BufWritePost * Neomake             " Run Neomake on bufwrite
+    autocmd FileType gitcommit setlocal spell   " Set spell check for commit msg
+    autocmd FileType tex setlocal spell         " Set spell check for tex
+" end Autocmd
+"-------~---~----------~----------~----
+
+"-------~---~----------~----------~----
 " Plugins
-    autocmd! BufWritePost * Neomake     " Run Neamake on bufwrite
-    let g:neomake_javascript_enabled_makers = ['eslint']
-    let g:neomake_tex_enabled_makers = ['make', 'open']
-    let g:neomake_tex_make_maker = {
-        \ 'exe': 'pdflatex',
-        \ 'args': [],
-        \ 'serialize': 1,
-        \ }
-    let g:neomake_tex_open_maker = {
-        \ 'exe': 'open',
-        \ 'args': ['%:p:r.pdf'],
-        \ 'append_file': 0,
-        \ 'serialize': 1,
-        \ }
+  let g:vimwiki_list = [{'path': '~/Dropbox/wiki/vimwiki', 'path_html': '~/Dropbox/html/vimwiki'}]
 " end Plugins
 "-------~---~----------~----------~----
