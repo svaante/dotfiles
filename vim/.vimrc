@@ -16,6 +16,11 @@
 
     Bundle 'chriskempson/base16-vim'
 
+    Bundle 'junegunn/fzf.vim'
+
+    Bundle 'plasticboy/vim-markdown'
+    Bundle 'vimwiki/vimwiki'
+
     call vundle#end()
 " end Setup bundle
 "-------~---~----------~----------~----
@@ -112,9 +117,13 @@
     cmap w!! w !sudo tee % >/dev/null
     nnoremap Q @q
     map <C-h> :wincmd h<CR>
+    tnoremap <C-h> <C-w>h
     map <C-j> :wincmd j<CR>
+    tnoremap <C-j> <C-w>j
     map <C-k> :wincmd k<CR>
+    tnoremap <C-l> <C-w>l
     map <C-l> :wincmd l<CR>
+    tnoremap <C-k> <C-w>k
     command Wall wall
     command Wq wq
     command W w
@@ -132,6 +141,6 @@
 
 "-------~---~----------~----------~----
 " Plugins
-  let g:vimwiki_list = [{'path': '~/Dropbox/wiki/vimwiki', 'path_html': '~/Dropbox/html/vimwiki'}]
+    let g:vimwiki_list = [{'path': '~/Dropbox/wiki/vimwiki', 'ext': '.md', 'syntax': 'markdown'}]
 " end Plugins
 "-------~---~----------~----------~----
