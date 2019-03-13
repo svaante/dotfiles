@@ -17,8 +17,8 @@
     Bundle 'chriskempson/base16-vim'
 
     Bundle 'junegunn/fzf.vim'
+    set rtp+=~/.fzf
 
-    Bundle 'plasticboy/vim-markdown'
     Bundle 'vimwiki/vimwiki'
 
     call vundle#end()
@@ -117,17 +117,19 @@
     cmap w!! w !sudo tee % >/dev/null
     nnoremap Q @q
     map <C-h> :wincmd h<CR>
-    tnoremap <C-h> <C-w>h
     map <C-j> :wincmd j<CR>
-    tnoremap <C-j> <C-w>j
     map <C-k> :wincmd k<CR>
-    tnoremap <C-l> <C-w>l
     map <C-l> :wincmd l<CR>
+    tnoremap <C-h> <C-w>h
+    tnoremap <C-j> <C-w>j
+    tnoremap <C-l> <C-w>l
     tnoremap <C-k> <C-w>k
+    tnoremap <Esc> <C-W>N
     command Wall wall
     command Wq wq
     command W w
     command E e
+    nnoremap <Leader>f :Files<cr>
 " end Mappings
 "-------~---~----------~----------~----
 

@@ -14,3 +14,4 @@ map <C-u> scrollPageUp
 map d closeTab
 map b B
 imap jk <Esc>
+let newtaburl = "https://www.duckduckgo.com"

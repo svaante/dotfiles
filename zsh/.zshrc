@@ -10,4 +10,6 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 set editing-mode vi
 set blink-matching-paren on
 bindkey -M viins 'jk' vi-cmd-mode
+
 alias vim='mvim -v'
+alias td=todo.sh
