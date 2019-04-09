@@ -10,16 +10,16 @@
 
     Plugin 'VundleVim/Vundle.vim'
 
+    Bundle 'Lokaltog/vim-monotone'
+
     Bundle 'neomake/neomake'
 
     Bundle 'christoomey/vim-tmux-navigator'
 
-    Bundle 'chriskempson/base16-vim'
-
     Bundle 'junegunn/fzf.vim'
     set rtp+=~/.fzf
 
-    Bundle 'vimwiki/vimwiki'
+    Bundle 'prabirshrestha/vim-lsp'
 
     call vundle#end()
 " end Setup bundle
@@ -43,8 +43,8 @@
     set hlsearch                        " Higlight search
     set smartcase                       " Do case-sensitive if there's a capital letter
     set autoread                        " Read a file that has changed
-    if executable('ack')                " Set ack if availiable
-        set grepprg=ack
+    if executable('ag')                 " Set ack if availiable
+        set grepprg=ag
     endif
     autocmd FileType gitcommit          " Set spell on gitcommit messages
     \ setlocal spell spelllang=en_us
@@ -71,7 +71,7 @@
 "-------~---~----------~----------~----
 " Graphics
     syntax on                           " Syntax highlightning
-    colorscheme base16-default-dark     " Colorscheme
+    colorscheme monotone                " Colorscheme
     set synmaxcol=2048                  " Syntax coloring lines are to long
     set wildmenu                        " Enable wildmenu
     set wildmode=longest:full,full      " Auto complete to longest matching and show tab
@@ -129,7 +129,7 @@
     command Wq wq
     command W w
     command E e
-    nnoremap <Leader>f :Files<cr>
+    nnoremap <Leader>f :FZF<cr>
 " end Mappings
 "-------~---~----------~----------~----
 
@@ -143,6 +143,5 @@
 
 "-------~---~----------~----------~----
 " Plugins
-    let g:vimwiki_list = [{'path': '~/Dropbox/wiki/vimwiki', 'ext': '.md', 'syntax': 'markdown'}]
 " end Plugins
 "-------~---~----------~----------~----
