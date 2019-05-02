@@ -5,23 +5,25 @@
 
 "-------~---~----------~----------~----
 " Setup bundel
-    set rtp+=~/.vim/bundle/Vundle.vim/
-    call vundle#begin()
+    call plug#begin('~/.vim/bundle')
 
-    Plugin 'VundleVim/Vundle.vim'
+    Plug 'Lokaltog/vim-monotone'
 
-    Bundle 'Lokaltog/vim-monotone'
+    Plug 'neomake/neomake'
 
-    Bundle 'neomake/neomake'
+    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
-    Bundle 'christoomey/vim-tmux-navigator'
+    Plug 'christoomey/vim-tmux-navigator'
+    Plug 'svaante/vimux'
 
-    Bundle 'junegunn/fzf.vim'
-    set rtp+=~/.fzf
+    Plug 'vimwiki/vimwiki'
 
-    Bundle 'prabirshrestha/vim-lsp'
+    Plug 'prabirshrestha/async.vim'
+    Plug 'prabirshrestha/vim-lsp'
 
-    call vundle#end()
+    Plug 'calviken/vim-gdscript3'
+
+    call plug#end()
 " end Setup bundle
 "-------~---~----------~----------~----
 
@@ -34,6 +36,7 @@
     set nobackup                        " Dissables backup
     set nowritebackup                   " Remove saftynet
     set noswapfile                      " Remove saftynet
+    set splitright                      " Switch to right window on vs
     set hidden                          " Switch buffers w/o saving
     set timeoutlen=500                  " Super low delay
     set backspace=indent,eol,start      " Make backspace more flexible
@@ -129,7 +132,15 @@
     command Wq wq
     command W w
     command E e
-    nnoremap <Leader>f :FZF<cr>
+
+    nnoremap <Leader>r :VimuxPromptCommand<cr>
+    nnoremap <Leader>rr :VimuxRunLastCommand<cr>
+
+    nnoremap <leader>f :FZF<cr>
+    let g:fzf_action = {
+      \ 'ctrl-s': 'split',
+      \ 'ctrl-v': 'vsplit' }
+
 " end Mappings
 "-------~---~----------~----------~----
 
@@ -143,5 +154,14 @@
 
 "-------~---~----------~----------~----
 " Plugins
+    if executable('pyls')
+        au User lsp_setup call lsp#register_server({
+            \ 'name': 'pyls',
+            \ 'cmd': {server_info->['pyls']},
+            \ 'whitelist': ['python'],
+            \ })
+    endif
+
+    let g:vimwiki_list = [{'path': '~/Dropbox/wiki/vimwiki', 'ext': '.md', 'syntax': 'markdown'}]
 " end Plugins
 "-------~---~----------~----------~----
