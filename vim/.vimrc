@@ -135,8 +135,15 @@
 
     nnoremap <Leader>r :VimuxPromptCommand<cr>
     nnoremap <Leader>rr :VimuxRunLastCommand<cr>
+    function! VimuxSlime()
+      normal! gv"ty
+      call VimuxOpenRunner()
+      call VimuxSendText(@t)
+    endfunction
 
-    nnoremap <leader>f :FZF<cr>
+    vmap <LocalLeader>s <Esc>:call VimuxSlime()<cr>
+
+    nnoremap <leader>e :FZF<cr>
     let g:fzf_action = {
       \ 'ctrl-s': 'split',
       \ 'ctrl-v': 'vsplit' }
