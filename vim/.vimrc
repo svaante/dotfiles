@@ -9,19 +9,19 @@
 
     Plug 'Lokaltog/vim-monotone'
 
+    Plug 'tpope/vim-surround'
+
     Plug 'neomake/neomake'
 
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
     Plug 'christoomey/vim-tmux-navigator'
+
     Plug 'svaante/vimux'
 
-    Plug 'vimwiki/vimwiki'
+    Plug 'bhurlow/vim-parinfer'
 
-    Plug 'prabirshrestha/async.vim'
-    Plug 'prabirshrestha/vim-lsp'
-
-    Plug 'calviken/vim-gdscript3'
+    Plug 'guns/vim-clojure-static'
 
     call plug#end()
 " end Setup bundle
@@ -49,8 +49,8 @@
     if executable('ag')                 " Set ack if availiable
         set grepprg=ag
     endif
-    autocmd FileType gitcommit          " Set spell on gitcommit messages
-    \ setlocal spell spelllang=en_us
+    autocmd FileType gitcommit setlocal spell spelllang=en_us
+    set updatetime=300
 " end General
 "-------~---~----------~----------~----
 
@@ -133,15 +133,22 @@
     command W w
     command E e
 
-    nnoremap <Leader>r :VimuxPromptCommand<cr>
-    nnoremap <Leader>rr :VimuxRunLastCommand<cr>
     function! VimuxSlime()
       normal! gv"ty
       call VimuxOpenRunner()
       call VimuxSendText(@t)
     endfunction
 
+    function! VimuxSlurp()
+      call VimuxOpenRunner()
+      call VimuxSendText(join(getline(1,'$'), "\n"))
+    endfunction
+
+    nnoremap <Leader>r :VimuxPromptCommand<cr>
+    nnoremap <Leader>rr :VimuxRunLastCommand<cr>
     vmap <LocalLeader>s <Esc>:call VimuxSlime()<cr>
+    nmap <LocalLeader>s V<Esc>:call VimuxSlime()<cr>
+    nmap <LocalLeader>f :call VimuxSlurp()<cr>
 
     nnoremap <leader>e :FZF<cr>
     let g:fzf_action = {
@@ -161,13 +168,22 @@
 
 "-------~---~----------~----------~----
 " Plugins
-    if executable('pyls')
-        au User lsp_setup call lsp#register_server({
-            \ 'name': 'pyls',
-            \ 'cmd': {server_info->['pyls']},
-            \ 'whitelist': ['python'],
-            \ })
+    if executable('ag')
+        let $FZF_DEFAULT_COMMAND = 'ag -g ""'   " Set ack if availiable
     endif
+
+    let g:neomake_cljs_enabled_makers = ['joker']
+    let g:neomake_cljs_joker_maker = {
+        \ 'exe': 'joker',
+        \ 'args': ['--lint'],
+        \ 'serialize': 1,
+        \ }
+
+    let g:neomake_clojure_enabled_makers = ['joker']
+    let g:neomake_clojure_joker_maker = {
+        \ 'exe': 'joker',
+        \ 'args': ['--lint']
+        \ }
 
     let g:vimwiki_list = [{'path': '~/Dropbox/wiki/vimwiki', 'ext': '.md', 'syntax': 'markdown'}]
 " end Plugins

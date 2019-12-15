@@ -2,7 +2,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
 
-plugins=(git vi-mode cp extract z)
+plugins=(git vi-mode cp extract fzf)
 
 source $ZSH/oh-my-zsh.sh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
@@ -13,3 +13,5 @@ bindkey -M viins 'jk' vi-cmd-mode
 
 alias vim='mvim -v'
 alias td=todo.sh
+alias cat=bat
+alias ls=exa

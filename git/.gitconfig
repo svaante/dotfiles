@@ -1,0 +1,13 @@
+[user]
+	name = Daniel Pettersson
+	email = svaante@gmail.com
+[core]
+	editor = mvim -v
+[tool]
+	tool = vimdiff
+[alias]
+	co = checkout
+	cm = commit
+	ad = add --interactive
+	st = status
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
